@@ -51,8 +51,11 @@ def main():
     out = ROOT / 'site'
     (out / 'ban.js').write_text(src, encoding='utf-8')
     bookmarklet = 'javascript:' + urllib.parse.quote(src, safe="()!*'~")
+    cfg = json.loads((ROOT / 'config.json').read_text(encoding='utf-8')) if (ROOT / 'config.json').exists() else {}
+    submit_url = cfg.get('submit_url', '')
     page = (out / 'index.template.html').read_text(encoding='utf-8')
     page = (page.replace('{{COUNT}}', str(len(ids)))
+                .replace('{{SUBMIT_URL}}', json.dumps(submit_url))
                 .replace('{{REPO}}', REPO_URL)
                 .replace('{{BOOKMARKLET}}', bookmarklet.replace('&', '&amp;').replace('"', '&quot;')))
     (out / 'index.html').write_text(page, encoding='utf-8')
