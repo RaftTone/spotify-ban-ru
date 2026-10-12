@@ -1,5 +1,5 @@
 (async () => {
-  const IDS = /*IDS*/[];
+  const IDS = (/*IDS*/'').match(/.{22}/g) || [];
   const KEY = 'banRuDone';
   if (!location.hostname.endsWith('open.spotify.com')) {
     alert('Спершу відкрий https://open.spotify.com і зайди в свій акаунт, потім натисни закладку ще раз.');
@@ -23,6 +23,7 @@
   stopBtn.onclick = () => { if (stop || stopBtn.dataset.done) { box.remove(); window.__banRuRunning = false; } stop = true; stopBtn.textContent = 'Зупиняю...'; };
 
   const BAN_RE = /не відтворювати|не воспроизводить|don.?t play|nicht abspielen|no reproducir|ne pas écouter|nie odtwarzaj/i;
+  const UNBAN_RE = /^(відтворювати|воспроизводить|play (this|songs)|wiedergeben|reproducir|jouer|odtwarzaj)/i;
   const barOf = () => document.querySelector('[data-testid="action-bar-row"]');
   const moreOf = () => barOf() && barOf().querySelector('[data-testid="more-button"]');
   const isBanned = () => !!(barOf() && barOf().querySelector('[data-testid="ban-button"]'));
@@ -50,6 +51,7 @@
     moreOf().click();
     await wait(700);
     const items = [...document.querySelectorAll('[role="menu"] [role="menuitem"], #context-menu li button')];
+    if (items.some((e) => UNBAN_RE.test(e.innerText.trim()))) { document.body.click(); return 'already'; }
     const item = items.find((e) => BAN_RE.test(e.innerText)) || items[1];
     if (!item) { document.body.click(); return 'failed'; }
     item.click();
@@ -66,12 +68,13 @@
     n++;
     bar.style.width = Math.round((n / IDS.length) * 100) + '%';
     if (store[id] === 'banned' || store[id] === 'already') { counts.skipped++; continue; }
-    st.textContent = 'Артист ' + n + ' з ' + IDS.length + '...';
+    const left = IDS.length - n;
+    st.textContent = 'Артист ' + n + ' з ' + IDS.length + '. Лишилось приблизно ' + Math.ceil(left * 4 / 60) + ' хв. Вкладку не закривай.';
     let r;
     try { r = await ban(id); } catch (e) { r = 'failed'; }
     counts[r]++;
     if (r === 'banned' || r === 'already') { store[id] = r; save(); }
-    await wait(1200 + Math.random() * 900);
+    await wait(500 + Math.random() * 500);
   }
 
   history.pushState({}, '', startPath);

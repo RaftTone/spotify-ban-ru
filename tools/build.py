@@ -47,7 +47,7 @@ def main():
     if '--check' in sys.argv:
         return
 
-    src = (ROOT / 'src' / 'ban.js').read_text(encoding='utf-8').replace('/*IDS*/[]', json.dumps(ids))
+    src = (ROOT / 'src' / 'ban.js').read_text(encoding='utf-8').replace("/*IDS*/''", "'" + ''.join(ids) + "'")
     out = ROOT / 'site'
     (out / 'ban.js').write_text(src, encoding='utf-8')
     bookmarklet = 'javascript:' + urllib.parse.quote(src, safe="()!*'~")
