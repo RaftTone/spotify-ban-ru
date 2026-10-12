@@ -60,7 +60,7 @@ function notify_if_needed(string $dir, array $ids, array $cfg): void {
         $n = count($st['pending']);
         $text = "Spotify-бан: накопичилось нових виконавців на перевірку: $n.\n"
               . "Всього унікальних пропозицій: " . count($st['seen']) . ".\n"
-              . "Забрати: submissions.jsonl з private_data, переглянути: python3 tools/review.py submissions.jsonl";
+              . "Забрати: submissions.jsonl з spotify_ban_private, переглянути: python3 tools/review.py submissions.jsonl";
         if (tg_send($cfg, $text)) $st['pending'] = [];
     }
     ftruncate($fh, 0); rewind($fh); fwrite($fh, json_encode($st));
@@ -85,7 +85,7 @@ if (!$ids) reply(422, ['ok' => false, 'error' => 'no_valid_ids']);
 if (count($ids) > MAX_IDS) $ids = array_slice($ids, 0, MAX_IDS);
 $note = mb_substr(trim(strip_tags((string)($in['note'] ?? ''))), 0, MAX_NOTE);
 
-$dir = getenv('SUBMISSIONS_DIR') ?: dirname($_SERVER['DOCUMENT_ROOT'] ?? __DIR__) . '/private_data';
+$dir = getenv('SUBMISSIONS_DIR') ?: dirname($_SERVER['DOCUMENT_ROOT'] ?? __DIR__) . '/spotify_ban_private';
 if (!is_dir($dir) && !mkdir($dir, 0700, true)) reply(500, ['ok' => false, 'error' => 'storage']);
 
 // сіль для хешу адреси; сама адреса не зберігається

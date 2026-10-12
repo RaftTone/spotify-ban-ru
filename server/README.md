@@ -4,7 +4,7 @@
 
 ## Розгортання
 
-1. Покласти `submit.php` на PHP-хостинг (7.4+). Дані пишуться **поза webroot**: `<на рівень вище DOCUMENT_ROOT>/private_data/` (або `SUBMISSIONS_DIR`).
+1. Покласти `submit.php` на PHP-хостинг (7.4+). Дані пишуться **поза webroot**: `<на рівень вище DOCUMENT_ROOT>/spotify_ban_private/` (або `SUBMISSIONS_DIR`).
 2. У `private_data/config.json` (не в репозиторії):
    ```json
    {"telegram_token": "<токен бота>", "telegram_chat": "<id чату>", "notify_threshold": 20}
