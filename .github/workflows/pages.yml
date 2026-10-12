@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/build.py
-      - run: mkdir _site && cp site/index.html site/ban.js _site/
+      - run: mkdir -p _site/lists && cp site/index.html site/ban.js _site/ && cp lists/blocklist.txt lists/allowlist.txt _site/lists/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
