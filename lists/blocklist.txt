@@ -1,0 +1,190 @@
+# Список виконавців для бану («Не відтворювати пісні виконавця»).
+# Формат рядка:  <Spotify artist ID, 22 символи>  # <ім'я>
+# ID це частина посилання на артиста: open.spotify.com/artist/<ID>
+# Додати артиста: див. CONTRIBUTING.md. Прибрати: PR з поясненням або запис у allowlist.txt.
+3tYzkTZtYt5dGBSrAnWpX0 # Nautilus Pompilius
+1Q5COYHgA7ch0y3HqCNgwt # madk1d
+2hTmpvdwhpNZryOkwTisRW # Toxi$
+2eiThpX5zH6LFmqP2HY1hL # Дора
+3jayBSUIK2eqnLCWfJoWwV # тёмный принц
+2gGvBjb55mnnbQO2gNQSLo # ONDA ANDAR
+6CGetCSvhKrqmeKnsaI4Bm # урал гайсин
+2U8WjSfWrXusGaZXinLUtl # снялцепи
+0xByDfltDVpk6LDsUMHyI2 # Poshlaya Molly
+1Z0sJgBY5vP651KUWJTbjh # lightprey
+1pxLlPRiWRUBGdSOrVL4f0 # Kai Angel
+4pQF6sfjTmNBsUKFuJpA5W # Катрин Штоль
+0oSMgGNMeXe3HJAXEJrqL8 # YungMeechy
+0ne2rg2JwZmIy7X1aVNq7y # 163ONMYNECK
+3a4bEvoyyeZPOLxCkSgPO6 # A.V.G
+0v3cIqT5jtOSGxotzz8kcZ # Amirchik
+1pU40mNxB72IERMSbGwCBm # ANIVAR
+3OSykhRUqDpjUWLjnDz9Lz # AY YOLA
+6DAzBc6NiyLFSKZ8dmj4Rc # Baby Cute
+4sgO0Ssqay0RC2rsC2BfqW # BEARWOLF
+5NMwoStnfHT4LdETlJSwDT # Big Baby Tape
+27kGBCjiz5OXojkKX4xQ6R # Bushido Zho
+0BPOpRKw4vLwPFp4LsFRpO # By Индия
+0QsH0QgYI4uFrC8tkeAXna # Costa Lacoste
+4k0dbhJImJWSJf9PsH7H3z # Dead Blonde
+1fLIzbK5e8MGrLKj1dEMsg # DJ Smash
+462bQVHRwoW4loeQRHlRzq # Elman
+35m8HjyHmGQxAKfIBVHZpF # Endspiel
+3GOI8AbB8KMYk20rWy38X5 # Galibri & Mavik
+0xTdDjeCoM89b7n9fLcZvR # GAYAZOV$ BROTHER$
+0ohUvVskERzK18bvWXFEqi # GONE.Fludd
+0dXxXRpeXSNfAG3t7HrLDf # Goro
+0OCyDRYamSDX0nSnJ59W1u # Guf
+6o7TsOGOEF5Mqpiz2KCyWE # HammAli & Navai
+4z3TiM4dsnvWDRcnqf3l0r # Icegergert
+1G3VDMXqTM2X2LTWrvKqvY # Jahmal TGK
+0Kwx9LPnkelacgHzRI8vxl # Jakone
+2ISiyx4DLCMAMBCvPesCoq # Jony
+1EDrjPOlEjmbzjbet1DxTN # Kiliana
+5NipqMGsY4AUeb7kGT8aVz # Kizaru
+0JHx4h8GAtjhmHMQ68iQiU # Konfuz
+5uMClxnfkye15tg63lrwU8 # Lesha Svik
+0j6G5eiOcrSdlyqaYwtxwS # Lizer
+2vggePK4EeOD8UkZxGNNGw # LYRIQ
+5VKufGMVAZ6fs111xYNKnU # Macan
+3Vfd5HJnhjnvdyuQYHtYa2 # Markul
+5w98ILth0uq2xi2am1vu5g # Mary Gu
+7MVKH9fm8zwRycJpRU1UGc # Matrang
+3KtiWEUyKC5lgHedcN6y6C # Mayot
+7lC9GiVHVMSIGt7yCQS0U5 # MIA BOYKA
+6zgKOaA7tWttJS7JMdiCbh # Misha Marvin
+1kmpkcYbuaZ8tnFejLzkj2 # MiyaGi
+6L5bLEtpxwd0KOdOr3gtW4 # MiyaGi & Andy Panda
+791r7uYF9uUkMi7yBveXBj # Mona
+28oFVU5sNejm6p76RkSwtQ # Moya Mishel
+73VKEgMtKpysM3ITNxkXDa # Navai
+7wHvox8DtmBBPpDFRVURv4 # Niletto
+1hwKCeSXpLrh4OQND6iQHw # Obladaet
+1H1zBr7TXFwTwsHU5kX9gW # OG Buda
+0aXi5kveuKNm6t5vGVeUBM # Ooes
+7blTwZGiTplsvBEvYOsDot # Ramil’
+4md29VFrdmXz1YYmH4u74u # RASA
+0pRJEFIZ15zsikL0PML84H # REFLEX
+1WAB4gjjNfQpAgT5SoAbRE # ROCKET
+0jDBG1EeQiw6n273ZPq2D8 # Sabi
+1nnaE1FllcW0TlDdPVmdPg # Scally Milano
+1Ulwacsns9Me7dz4OVwkiQ # Serebro
+3vvLuXEEf7sl3izJcw0GIn # Skryptonite
+2hRppUIkq50zRtcqHzubfC # Sky Rae
+3TikHXhctY4FUIMlkl0tzR # Soda Luv
+4tNOoN8ygqwRV657VyhBRp # Solidnaya
+5U2ISoieRzT6TaqiXumcXl # Sqwoz Bab
+7LdZqOf4uMeA5vzlI0oza7 # The Limba
+43cTNOHTq4t7YzHyttQxNf # V $ X V PRiNCE
+6BWpoXnUFVamLwShpnE24C # Whole Lotta Swag
+774od4b04zDMQMGxrJDeuB # Xcho
+6oTirjGdJPFt3hycC1Rfxb # Xolidayboy
+7gmUEqRjXK144s5jQMVc8c # Yanix
+0ltb3ImYKP1qewcChFzM1x # Yasmi
+1pvmXh50KezixmCHnp9XvV # Zivert
+1gpjSKJC0UekvhaI8fAcoq # АИГЕЛ
+40YXr3tdSqFv0kfmgjj8vP # Анна Асті
+7as5DY4Rz9jac9tgoTrj9H # Баста
+2JrtkA0Z0JxBfEmxL25cP6 # Бонд с кнопкой
+0eliZGdPRZ7tUoWd33maJC # Валя Карнавал
+1kxqshyCqWuOQJNCTgHKzM # Ваня Дмитрієнко
+0r3Nr12KW6sMFbgdzbJtgj # Где Фантом?
+3ZOk6bDH8ORFWZUA4qvevR # Гіо Піка
+5W7N6u4EjCEMKj7bDyzPEC # Джиган
+0Cm90jv892OeEegB3ELmvN # Елджей
+3JYowG5k65ROJjN5PXx9Ce # Женя Трофимов
+6oO3QiWdVj5FZQwbdRtsRh # Земфіра
+1I8cwnCuQZfi6C1eZVrRIF # Клава Кока
+0dTuwuNVB1hXbxaDM42ncA # Комната культуры
+5DIzBPaVlYSmlIQaafQSow # Кравц
+05MQiIv63Y3WL4AXG1Zo3E # Татьяна Куртукова
+3OBELtlkijaKfWgw1JHryW # Леонід Агутін
+6HaPN2wOlwvk2sJvJrF0a5 # Люся Чеботіна
+52OqFsDacV87Zx7BfXuw2i # Марі Краймбрері
+0yp6xP5xe1qarfugfTixOK # Монеточка
+6OTMjaRQ9kxdwoPRYTmyOM # Мот
+2u3ZpvdeLOLg3mIvQg0jZh # Мэйби Бэйби
+5JdGGCCPo07UPcbg27cQXT # Лоліта
+3vz7YOTm6wZUxQkvaq2Mu3 # Аня Пересильд
+5VxeSwDCDsUT35ggejgYo2 # Полка
+1Hd2ZcCOUCR5U1xDTbpDv8 # Ольга Серябкіна
+5u0W7zfv2iu2LWbP4xoTXb # Согдіана
+5q1NzLZwErZ9ujzqZKL0YZ # Три дня дождя
+1DuX5KV5IxzJ9e5A6KZ2OG # Любов Успенська
+2YvmQRmm5L55WT6QUaXSXV # Хабіб
+6aaAPGSn5exJoCTUBhIPCc # Ханна
+4Feybux9BJEcwZTkQ7FQXW # я про рок
+2KoLmBXwsgMkfAvoPBlPmb # Єгор Крід
+2SeRP5iAIhVec4azKHJzjX # Інстасамка
+1VZ1TofaV3kj90QJSdg6NG # Ivan Dorn
+01lZudgXsojt5TBHuygB8r # T-Fest
+1J9vlx72A2T3kbRckBu04o # Ani Lorak
+6s0fS9mgVvYwkTOGtNyf3R # Ани Лорак
+0fjbl13RhdZCsYBTLRDXGX # Таїсія Повалій
+27dCQviWOwbECzRe9o8xes # Taisia Povaliy
+4UsmVGTdKwCWC0B86P6N7L # VILLIAN
+4anb8rmk0xipuQP6QZ5IlH # FORTUNA 812
+4J6A7DGmVEA4CXhTnCxxEd # ANDRO
+4ywf1iH1ruKEcfpCgfJvyA # ARTIK & ASTI
+763SuGjtCI9H4bCNOPFyrp # DAKOOKA
+7ud4BSqYxbum6CEult1m1G # Sudno
+4bI1b116KZGjJl5Dy7Lsjy # Sимптом
+260kWe4y9lg7YFDsZBgsLv # zhanulka
+44ghyStDOsSKK2iGVdhRud # 5УТРА
+5B5qmrbTFvA7TAxWruuwbo # Aarne
+3coC7bHB44fWJa1WxocGyg # Allega
+74t7Nu8mYVod6RF6cQamwJ # BLAZER 993
+57ZUR83yoB6QYFnPKUXahT # Bollo
+2XHTwoSYBotOBQ8EnWkUdz # CHEPIKK
+6piaRBSk79hfoHINy7DMGO # CUPSIZE
+5GVO9K6Iaebk8oQnXGTzqL # daryana
+5YbaVdsDY5U0xCHaHHYBmB # DASHI
+5hIbj65Y2z2tiL0JLcGCNz # DJ DANI WOO
+0wmjDpXCckJ8zVOMWePyKh # elox1m
+0hNZDsaGK7gGtfyHVsx1H9 # GATASKI
+5q6g0oTaakuhCLK7nHCjLn # GENDELMANN
+5wZCI0c4G3w09eZ5jsbcRZ # GENSYXA
+3Z2TLso4pM7QrgMgkKVPZB # greyrock
+6PlfrUehMgLpBPdqVTuhSL # Hloy
+3jKIslLMAzfs1EJ9rKdtPP # Isko
+5MNSosfX9IiRNNAfcbLrEl # JAMIK
+1793RNBnWXkl6iRbT196Nk # KDDK
+73DJQnHaj7nA5mduxfZ2Fz # KlouKoma
+0JL4IAt0BAA0gdycED60BO # Koss
+3JG79Z23wJN9Q5PTPpDAEV # kostromin
+3qyi2Tp4l3a5916kcd5Jzn # kvmly
+7gkiPvED2x3EMa2skPlXKz # MIRAVI
+5mTgQIO2p9dNiW1ehQiJyW # MIROLYBOVA
+5T9Q17uI3gmKMJiNs4CMQR # Murovei
+6MNmnKmvKRaLxBsfhh3gYj # NEEL
+5f1ngWybCFDdhuJiTrma8q # Netsignala
+6OYItdfhVXpz16ZvpFq7Uh # NEWLIGHTCHILD
+6h0qX1yFST67tTRZi0YaFS # Oleg Miami
+5xp2LzmCoVF6LQ6dfMje5O # opm.
+04eaOESLpGSh22nSbL5qx2 # PALOMA
+5UmEsxALI1S6DSz5CGs0Sc # PIZZA
+0dTjZaDfOStkPF0fiUOaCG # Quest Pistols Show
+7GYG6IRwVRt2Hghb2VjSvB # Real girl
+7l7B6CBUbV3SUp0dIiLKkA # SCIRENA
+7ubYmOh5PslycthkShmKS6 # Slavik Pogosov
+1LwQYltGc8L6CYdfNXtppi # SpuTniK Project
+3o1rwGAoMoB9DEDUiNXdzb # TAKETAKE
+2lnhRluGIwUMcez0lohQT8 # Tatar
+0lL960B4kPxrmPP6Dvm4EQ # TONI
+1ytdF21tIxLMqAdrJ5uDsI # VEIGEL
+7K2PBAFUE98RKu30clhIms # Violetta Sokolova
+5CXRDLgW8yFPelZlzCItbE # WHITE GALLOWS
+1d0zYghZYgr5tGIPCdr2cr # zovo
+4cxaOFZwyVnVQSb4AnE1HG # АлСми
+3A7vB16zcNiAoUGmJ3dpSo # Андрей Давинчи
+6JnpEU5sWJye5dEDWJheUg # Арсений Бородин
+2hw7Sn1JSu9FRWdbrIXbAA # Артем Пора Домой
+7yNqUSyJGymfJQghNU0zcH # Грибы
+65J0xSmKmX3ENY7JYyTAUQ # Даена
+1Em23NcWtCEQM7vi4a1fMc # КАЗАКИ ДЕЛАЮТ ХИТЫ
+0Jvm7OwJXctCv9K5nAd7id # Катя Лель
+31Lg4qp6gNM8zaGWaCG4HX # Криминальный бит
+2ptu9JzYrNTmrb33XgOQYI # Марина Кравец
+4hXlrT1Wt6hUAW7Cj7WHYc # Маша и Медведи
+06j0PdOWS31kMCmfxsCwg9 # Райда
+613J1haXCh7WIqNM2fMiWW # Холла

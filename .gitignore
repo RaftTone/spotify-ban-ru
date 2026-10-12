@@ -1,0 +1,7 @@
+research/
+candidates-wikidata.csv
+__pycache__/
+.DS_Store
+site/index.html
+site/ban.js
+_site/

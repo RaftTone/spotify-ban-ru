@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бан російських виконавців у Spotify</title>
+<meta name="description" content="Закладка для браузера, яка одним кліком ставить «Не відтворювати пісні виконавця» для всього списку з відкритого репозиторію.">
+<style>
+  :root { --bg:#fff; --fg:#111; --muted:#555; --card:#f4f4f4; --accent:#1db954; --line:#e2e2e2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --fg:#f3f3f3; --muted:#a8a8a8; --card:#1e1e1e; --line:#333; } }
+  * { box-sizing:border-box; }
+  body { background:var(--bg); color:var(--fg); font:17px/1.55 system-ui,-apple-system,sans-serif; margin:0; }
+  main { max-width:640px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:26px; line-height:1.2; margin:0 0 8px; }
+  h2 { font-size:19px; margin:32px 0 8px; }
+  p.lead { color:var(--muted); margin:0 0 28px; }
+  ol { padding-left:0; list-style:none; counter-reset:s; }
+  li { counter-increment:s; background:var(--card); border-radius:12px; padding:16px 18px 16px 58px; margin:0 0 12px; position:relative; }
+  li::before { content:counter(s); position:absolute; left:16px; top:14px; width:28px; height:28px; border-radius:50%; background:var(--accent); color:#000; font-weight:700; display:grid; place-items:center; }
+  a.btn { display:inline-block; margin-top:8px; padding:10px 20px; border-radius:24px; background:var(--accent); color:#000; font-weight:700; text-decoration:none; cursor:grab; }
+  small { color:var(--muted); display:block; margin-top:6px; }
+  a { color:inherit; }
+  .note { border-top:1px solid var(--line); margin-top:28px; padding-top:16px; color:var(--muted); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Бан російських виконавців у Spotify одним кліком</h1>
+  <p class="lead">У списку зараз {{COUNT}} виконавців. Закладка сама відкриє кожного в твоєму Spotify і натисне «Не відтворювати пісні виконавця». Паролі й дані нікуди не передаються: усе працює в твоєму браузері.</p>
+  <ol>
+    <li>Перетягни цю кнопку на панель закладок браузера (Ctrl+Shift+B або Cmd+Shift+B, якщо панелі не видно).<br>
+      <a class="btn" href="{{BOOKMARKLET}}">Забанити росіян</a>
+      <small>Просто клікати по ній тут не треба.</small></li>
+    <li>Відкрий <b>open.spotify.com</b> у браузері на комп'ютері й увійди в акаунт.</li>
+    <li>Натисни закладку «Забанити росіян». Справа знизу з'явиться вікно з прогресом. Вкладку не закривай, поки не побачиш «Готово!». Якщо вкладка у фоні, виконання сповільнюється.</li>
+  </ol>
+
+  <h2>Часті питання</h2>
+  <p><b>Це працює на телефоні?</b> Запускати треба з комп'ютера. Бани зберігаються в акаунті Spotify і діють на всіх твоїх пристроях.</p>
+  <p><b>Що саме робить закладка?</b> Відкриває сторінку кожного виконавця зі списку й натискає «Не відтворювати пісні виконавця». Код <a href="ban.js">відкритий</a>, його можна прочитати перед запуском. Уже заблоковані пропускаються, повторний запуск безпечний.</p>
+  <p><b>Як зняти бан?</b> На сторінці виконавця натисни кнопку із закресленим колом.</p>
+  <p><b>Хто в списку?</b> Це список, який складають автор і учасники проєкту. Критерії та спосіб додати чи оскаржити артиста: <a href="{{REPO}}">репозиторій на GitHub</a>.</p>
+
+  <p class="note">Проєкт не пов'язаний зі Spotify. Скрипт автоматизує кнопку в веб-плеєрі, яку Spotify дає кожному користувачеві; інтерфейс сайту може змінитися, тоді скрипт треба оновити.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Бан російських виконавців у Spotify
+
+Закладка для браузера, яка одним кліком ставить «Не відтворювати пісні виконавця» для всього списку з цього репозиторію. Spotify не має офіційного способу зробити це масово, тому скрипт натискає ту саму кнопку, що й ти руками, але автоматично.
+
+**Інструкція для користувачів:** https://rafttone.github.io/spotify-ban-ru/
+
+Три кроки: перетягнути кнопку на панель закладок, відкрити open.spotify.com на комп'ютері, натиснути закладку. Паролі й дані нікуди не передаються, усе виконується в твоєму браузері.
+
+## Як це працює
+
+- `lists/blocklist.txt`: список виконавців (Spotify artist ID та ім'я).
+- `lists/allowlist.txt`: виконавці, яких не чіпаємо, навіть якщо вони трапляються в blocklist.
+- `src/ban.js`: код закладки. Переходить на сторінку кожного виконавця, натискає «⋯ → Не відтворювати пісні виконавця» і перевіряє, що бан з'явився. Уже заблокованих пропускає.
+- `tools/build.py`: підставляє список у код і збирає сторінку-інструкцію. GitHub Actions робить це автоматично після кожного злиття в `main` і публікує на GitHub Pages.
+
+## Як додати виконавця
+
+Найпростіше: відкрити `lists/blocklist.txt` на GitHub, натиснути олівець, додати рядок `ID # Ім'я` і створити pull request. Або відкрити issue «Запропонувати виконавця». Докладніше та критерії: [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Обмеження
+
+- Працює лише в десктопному браузері. Бани зберігаються в акаунті і діють на всіх пристроях.
+- Це автоматизація веб-плеєра. Якщо Spotify змінить верстку, скрипт треба буде оновити (відкрийте issue).
+- Список складається автором і учасниками проєкту. Він суб'єктивний; кожне ім'я можна оскаржити через issue.
+- Проєкт не пов'язаний зі Spotify.
+
+## English
+
+A bookmarklet that bulk-applies Spotify's "Don't play this artist" to a community-maintained list of Russia-linked artists. Spotify's Web API has no endpoint for this, so the script drives the web player UI in your own logged-in browser; nothing is sent anywhere. Open the [instructions page](https://rafttone.github.io/spotify-ban-ru/), drag the button to your bookmarks bar, open open.spotify.com on desktop, click it. Contributions to `lists/blocklist.txt` are welcome via pull request.
+
+## Ліцензія
+
+MIT, див. [LICENSE](LICENSE). Це стосується коду; списки виконавців доступні на тих самих умовах.

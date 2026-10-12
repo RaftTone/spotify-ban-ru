@@ -1,0 +1,7 @@
+# Виконавці, яких НЕ банимо (навіть якщо вони трапляються в blocklist).
+# Формат той самий: <ID>  # <ім'я> (причина)
+7wl1m5vgWkCP3cqYVj2noM # DOROFEEVA
+6wbEgVlGqWb4I9tbMluu5Q # MONATIK
+2ojY7fXJxZQhg8Rx5e8h9G # SadSvit
+1ewZuAmm3Em0KlM0pIBwVe # Nikow (з 2022 лише укр. пісні, рішення автора)
+1gg8DiQzv8QV2Ej1lWGIQV # Alena Omargalieva (з 2022 лише укр. пісні, рішення автора)
