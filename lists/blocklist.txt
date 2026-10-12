@@ -1235,3 +1235,17 @@
 3B2Ms2Lu80pSd5R2aXlhFG # Худолей, Игорь Леонидович | RU, Wikidata
 2YalODxP9p7fzz91epiQ6R # Хайрова, Сабина | RU, Wikidata
 0Jn6SkJMSlarXkWrfOcgFX # Новелла Николаевна Матвеева | RU, Wikidata
+# --- Додано пошуком за іменем (відомі виконавці, яких не було в джерелах) ---
+03kBsmEU2kHa9O3ZxP98zd # ГАЗМАНОВ | RU, пошук за іменем
+6CLgDkCzJqZEziJXZhVLTd # Alexander Malinin | RU, пошук за іменем
+1Id2ihI1R8yMFtPux68clX # Александр Малинин | RU, пошук за іменем
+1wKAt2EC04FJXM6XbbKV39 # Lev Leshchenko | RU, пошук за іменем
+1MqJ49tBJn9tCwD98PdKZl # Надежда Бабкина | RU, пошук за іменем
+5v3o1cxdSAATA5avCi1JA9 # Valery Leontiev | RU, пошук за іменем
+6MnbF4D0Fv2zUVnf08Df5t # Nadezhda Kadysheva | RU, пошук за іменем
+3PDmjiRBwQ9Y3p52N0tOX2 # Надежда Кадышева | RU, пошук за іменем
+5CpYZzbKyHlOxgp3vWYylr # Nadezhda Kadysheva and Golden Ring | RU, пошук за іменем
+5euzxgaseC04JNPPpxXURf # Игорь Николаев | RU, пошук за іменем
+0sHycRSBxNRJPes9wsPi53 # Stas Piekha | RU, пошук за іменем
+3kYUnPkuC2xCH8ybWZ19Ky # Юрий Антонов | RU, пошук за іменем
+5Ymnb5Q1Qg6ZI6cEz0kloG # Yuri Antonov | RU, пошук за іменем
