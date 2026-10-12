@@ -20,6 +20,12 @@
   a.btn { display:inline-block; margin-top:8px; padding:10px 20px; border-radius:24px; background:var(--accent); color:#000; font-weight:700; text-decoration:none; cursor:grab; }
   small { color:var(--muted); display:block; margin-top:6px; }
   a { color:inherit; }
+  a.btn { user-select:none; -webkit-user-drag:element; }
+  a.btn::before { content:"\2630\00a0"; opacity:.6; }
+  @keyframes shake { 0%,100% { transform:translateX(0); } 20%,60% { transform:translateX(-6px); } 40%,80% { transform:translateX(6px); } }
+  a.btn.shake { animation:shake .4s; }
+  #hint { display:none; margin-top:10px; padding:10px 14px; border-radius:10px; background:#fff3cd; color:#5c4400; font-size:15px; }
+  #hint.on { display:block; }
   .note { border-top:1px solid var(--line); margin-top:28px; padding-top:16px; color:var(--muted); font-size:15px; }
 </style>
 </head>
@@ -29,8 +35,9 @@
   <p class="lead">У списку зараз {{COUNT}} виконавців. Закладка сама відкриє кожного в твоєму Spotify і натисне «Не відтворювати пісні виконавця». Паролі й дані нікуди не передаються: усе працює в твоєму браузері.</p>
   <ol>
     <li>Перетягни цю кнопку на панель закладок браузера (Ctrl+Shift+B або Cmd+Shift+B, якщо панелі не видно).<br>
-      <a class="btn" href="{{BOOKMARKLET}}">Забанити росіян</a>
-      <small>Просто клікати по ній тут не треба.</small></li>
+      <a class="btn" id="bm" href="{{BOOKMARKLET}}" draggable="true">Забанити росіян</a>
+      <small>Не клікай, а <b>перетягни</b> її вгору, на панель закладок.</small>
+      <div id="hint" role="status">Тут клікати не треба 🙂 Затисни кнопку мишею й перетягни її на панель закладок угорі браузера. Потім відкрий Spotify і клікай уже закладку.</div></li>
     <li>Відкрий <b>open.spotify.com</b> у браузері на комп'ютері й увійди в акаунт.</li>
     <li>Натисни закладку «Забанити росіян». Справа знизу з'явиться вікно з прогресом. Вкладку не закривай, поки не побачиш «Готово!». Якщо вкладка у фоні, виконання сповільнюється.</li>
   </ol>
@@ -43,5 +50,15 @@
 
   <p class="note">Проєкт не пов'язаний зі Spotify. Скрипт автоматизує кнопку в веб-плеєрі, яку Spotify дає кожному користувачеві; інтерфейс сайту може змінитися, тоді скрипт треба оновити.</p>
 </main>
+<script>
+  (function () {
+    var b = document.getElementById('bm'), h = document.getElementById('hint');
+    b.addEventListener('click', function (e) {
+      e.preventDefault();
+      h.className = 'on';
+      b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+    });
+  })();
+</script>
 </body>
 </html>
