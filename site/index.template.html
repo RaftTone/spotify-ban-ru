@@ -33,6 +33,10 @@
   .sub button[disabled] { opacity:.5; cursor:default; }
   .sub .msg { margin-top:10px; font-size:15px; }
   .sub .hpf { position:absolute; left:-9999px; }
+  details { background:var(--card); border-radius:12px; padding:12px 16px; margin:0 0 12px; font-size:15px; }
+  details summary { cursor:pointer; font-weight:600; }
+  details textarea { width:100%; min-height:110px; margin-top:8px; font:12px/1.4 ui-monospace,monospace; padding:8px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--fg); }
+  details button { margin-top:8px; padding:8px 16px; border:0; border-radius:20px; background:var(--accent); color:#000; font:inherit; font-weight:700; cursor:pointer; }
   .note { border-top:1px solid var(--line); margin-top:28px; padding-top:16px; color:var(--muted); font-size:15px; }
 </style>
 </head>
@@ -42,8 +46,9 @@
   <p class="lead">У списку зараз {{COUNT}} виконавців. Закладка сама відкриє кожного в твоєму Spotify і натисне «Не відтворювати пісні виконавця». Паролі й дані нікуди не передаються: усе працює в твоєму браузері.</p>
   <ol>
     <li>Перетягни цю кнопку на панель закладок браузера (Ctrl+Shift+B або Cmd+Shift+B, якщо панелі не видно).<br>
-      <a class="btn" id="bm" href="{{BOOKMARKLET}}" draggable="true">Забанити росіян</a>
-      <small>Не клікай, а <b>перетягни</b> її вгору, на панель закладок.</small>
+      <a class="btn" id="bm" data-bm href="{{LOADER}}" draggable="true">Забанити росіян</a>
+      <small>Не клікай, а <b>перетягни</b> її вгору, на панель закладок. Вона щоразу завантажує свіжий список, тож нову закладку перетягувати не доведеться.</small>
+      <small>Не спрацювало? Спробуй <a data-bm href="{{BOOKMARKLET}}" draggable="true">автономну версію</a> (список вшито в закладку, інтернет-завантаження не потрібне).</small>
       <div id="hint" role="status">Тут клікати не треба 🙂 Затисни кнопку мишею й перетягни її на панель закладок угорі браузера. Потім відкрий Spotify і клікай уже закладку.</div></li>
     <li>Відкрий <b>open.spotify.com</b> у браузері на комп'ютері й увійди в акаунт.</li>
     <li>Натисни закладку «Забанити росіян». Справа знизу з'явиться вікно з прогресом. Вкладку не закривай, поки не побачиш «Готово!». Якщо вкладка у фоні, виконання сповільнюється.</li>
@@ -52,6 +57,12 @@
   <h2>Часті питання</h2>
   <p><b>Це працює на телефоні?</b> Запускати треба з комп'ютера. Бани зберігаються в акаунті Spotify і діють на всіх твоїх пристроях.</p>
   <p><b>Що саме робить закладка?</b> Відкриває сторінку кожного виконавця зі списку й натискає «Не відтворювати пісні виконавця». Код <a href="ban.js">відкритий</a>, а <a href="lists/blocklist.txt">список</a> теж: їх можна прочитати перед запуском. Уже заблоковані пропускаються, повторний запуск безпечний.</p>
+  <details>
+    <summary>Закладка не запускається? Запасний спосіб через консоль</summary>
+    <p>Відкрий open.spotify.com і увійди в акаунт. Натисни F12 (на Mac Cmd+Option+J), відкрий вкладку «Console», встав код нижче й натисни Enter. Браузер може попросити спершу набрати «allow pasting»: це нормальне захисне повідомлення, код нижче відкритий і безпечний.</p>
+    <textarea id="cons" readonly>{{LOADER_RAW}}</textarea>
+    <button type="button" id="copy">Скопіювати код</button> <span id="copied" style="color:var(--muted)"></span>
+  </details>
   <p><b>Як зняти бан?</b> На сторінці виконавця натисни кнопку із закресленим колом.</p>
   <p><b>Хто в списку?</b> Це список, який складають автор і учасники проєкту. Критерії та спосіб додати чи оскаржити артиста: <a href="{{REPO}}">репозиторій на GitHub</a>.</p>
 
@@ -69,11 +80,20 @@
 </main>
 <script>
   (function () {
-    var b = document.getElementById('bm'), h = document.getElementById('hint');
-    b.addEventListener('click', function (e) {
-      e.preventDefault();
-      h.className = 'on';
-      b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+    var cp = document.getElementById('copy');
+    if (cp) cp.addEventListener('click', function () {
+      var t = document.getElementById('cons'); t.select();
+      var done = function () { document.getElementById('copied').textContent = 'Скопійовано'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t.value).then(done, function () { document.execCommand('copy'); done(); });
+      else { document.execCommand('copy'); done(); }
+    });
+    var h = document.getElementById('hint');
+    Array.prototype.forEach.call(document.querySelectorAll('a[data-bm]'), function (b) {
+      b.addEventListener('click', function (e) {
+        e.preventDefault();
+        h.className = 'on';
+        b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+      });
     });
   })();
 </script>

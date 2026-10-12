@@ -12,6 +12,11 @@ import urllib.parse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ID_RE = re.compile(r'^[A-Za-z0-9]{22}$')
 REPO_URL = 'https://github.com/RaftTone/spotify-ban-ru'
+PAGES_URL = 'https://rafttone.github.io/spotify-ban-ru'
+LOADER = ("(async()=>{try{const r=await fetch('%s/ban.js',{cache:'no-cache'});"
+          "if(!r.ok)throw new Error('HTTP '+r.status);const c=await r.text();"
+          "await new(Object.getPrototypeOf(async function(){}).constructor)(c)()}"
+          "catch(e){alert('Не вдалося запустити скрипт: '+e.message+'\\nСпробуй автономну версію закладки на сторінці.')}})()") % PAGES_URL
 
 
 def read_list(path):
@@ -57,6 +62,8 @@ def main():
     page = (page.replace('{{COUNT}}', str(len(ids)))
                 .replace('{{SUBMIT_URL}}', json.dumps(submit_url))
                 .replace('{{REPO}}', REPO_URL)
+                .replace('{{LOADER_RAW}}', LOADER.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))
+                .replace('{{LOADER}}', ('javascript:' + urllib.parse.quote(LOADER, safe="()!*'~")).replace('&', '&amp;').replace('"', '&quot;'))
                 .replace('{{BOOKMARKLET}}', bookmarklet.replace('&', '&amp;').replace('"', '&quot;')))
     (out / 'index.html').write_text(page, encoding='utf-8')
     print('site/index.html зібрано, закладка %d символів' % len(bookmarklet))
