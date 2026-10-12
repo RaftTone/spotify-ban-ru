@@ -407,7 +407,6 @@
 3r1Md7Hk5iqtpyEoGo8032 # ARTEM SHILOVETS | RU, Wikidata
 0wEsJ9lfiBpK75Utmj8ipJ # Ярослав Сумишевский | RU, Wikidata
 55VoFcN80nM1cY5ymAO7B0 # BODIEV | RU, Wikidata
-2qxJFvFYMEDqd7ui6kSAcq # Zedd | RU, Wikidata
 6G0CZLe1HFoxcHp0FY4pNV # MOLLY | RU, MusicBrainz
 1iagZjhgJEyzavCadyFRaS # Давай на ты | російськомовні треки
 1FtVMxvR4T0tKA50BmfPQS # Naadia | RU, Wikidata
@@ -491,60 +490,43 @@
 3enGPbRK3g0OKDzt2ojUtD # рэ.прэса | RU, MusicBrainz
 0E5u7lkdHuaKLvGUsy0MXW # Керн, Ольга Владимировна | RU, Wikidata
 69GGH3fqk8waBkpDJ5C2mK # Сергей Лазарев | RU, Wikidata
-6VqVuLtujJqd6FH8eQ9gyr # Анна Винницкая | RU, Wikidata
-20iZXzMb8LoWXOeca32i82 # Владимир Давидович Ашкенази | RU, Wikidata
 5HyFKfE9ISfNbxcryriHsB # Хибла Леварсовна Герзмава | RU, Wikidata
 7vk7vgVoYDiZ4Kngc3Jgta # Мельников, Александр Маркович | RU, Wikidata
-24o3OUQvNiz3IY9DQhFhnF # Спиваков, Владимир Теодорович | RU, Wikidata
 1kDSBPZrNP705jptFMn5GG # Лукас Генюшас | RU, Wikidata
 2RImwn0eAgA8TWvlGPk0vu # Анита Сергеевна Цой | RU, Wikidata
 3yhOlOHePMA3oe6rRAvdMz # Стекловата | RU, Wikidata
-2MMdTWWDamS8wyZJ6Hosch # Теодор Курентзис | RU, Wikidata
 2Z9xsgKEjZF8ueZ96rV6nH # Алексей Воробьёв | RU, Wikidata
 6AJ9HQ2Ptp1WWEfBFvR5fF # Аркона | RU, Wikidata
 7902s7cvHtLQV3K7875DAz # Тату | RU, Wikidata
-71kYWgqr6eHLOZj6u3JTuJ # Кисин, Евгений Игоревич | RU, Wikidata
-6Nl8IBZLyEAhLVYdpAPEYB # Ситковецкий, Дмитрий Юлианович | RU, Wikidata
 1uOHAz5zfWQRGvn8SsjyPl # Макка Умаровна Сагаипова | RU, Wikidata
 7flDXGHrBtY2UNR9wyknKY # Сектор Газа | RU, Wikidata
-1dytTNPz0eY6ISLC7tq15z # Сергей Крылов | RU, Wikidata
 0Uit4gta4PrT7HvUe8W2Xo # Наталия Орейро | RU, Wikidata
 2rnxCwPGrldBoVGIQ4FWK1 # Жерар Депардьё | RU, Wikidata
-6X77f89mGJaE1wIgXE6SXr # Владимир Иванович Федосеев | RU, Wikidata
 6Koven2Ua78bOqgin2itz6 # Наталья Подольская | RU, Wikidata
 4uhWkTXU6xyvHTiop51kii # Азиза | RU, Wikidata
 5moBlpk9BYtujdRW6VLepL # Анна Юрьевна Нетребко | RU, Wikidata
 66msmpIMcbvv8WQNqnRMmL # Анастасия Сергеевна Задорожная | RU, Wikidata
-6etYlNivtzkxl1W0826xd2 # Ибрагимова, Алина Ринатовна | RU, Wikidata
 1UkK91RiLw3FonVedbAVA1 # Aurosonic | RU, Wikidata
 7IMMLy5f35ejJaye33HT0R # Софроницкая, Вивиана Владимировна | RU, Wikidata
 7CFMfCLC7QclkW2Piu8ddN # Максим Галкин | RU, Wikidata
 7nsTcQhdXuFPrwUcodT9tb # Максим Галкин | RU, Wikidata
-6ChLWj2mIxKtKa2pNifotH # Соколов, Григорий Липманович | RU, Wikidata
 0gOrXuu1vCBXe3pwTyb5Ca # Валентина Евгеньевна Лисица | RU, Wikidata
-2LxnoYPOe0FCLC82R3xgO2 # Валерий Абисалович Гергиев | RU, Wikidata
 1jgRWeREJTbx96zhcn8vgx # Стивен Сигал | RU, Wikidata
 1st22odJkjhFo4yRCETI59 # Мария Кац | RU, Wikidata
 41SQL9YPQa81fLAAZ6nHwk # Бурановские бабушки | RU, Wikidata
 7H63wD8xWXAKdYVjZmE90B # Bobina | RU, Wikidata
-2YdRnOqBXCl9g8xCLcGh8C # Плетнёв, Михаил Васильевич | RU, Wikidata
-6x1iIq6sH6TPtCA5IJjA4x # Юрий Абрамович Башмет | RU, Wikidata
 5RfS9o5FOLPdO77H58h3oA # Елена Сергеевна Катина | RU, Wikidata
 2PW6wAPflSqmxCz8Md0Xna # Псой Короленко | RU, Wikidata
 4H1K7u6druiGiZw3j4eytk # Юлия Олеговна Волкова | RU, Wikidata
 2YOPAE5jegb3i2uhVmYk1v # Ят-ха | RU, Wikidata
-2bMfnyPOgNaeK8WNnXNXud # Луганский, Николай Львович | RU, Wikidata
 6GO0U13OFE0XntmksjZ4PY # Александр Яковлевич Розенбаум | RU, Wikidata
 0VjT9l1JdsBHIUzJ6eMTqS # Валерий Миладович Сюткин | RU, Wikidata
-64ADmfgYtDfJrAxQvOEpjx # Лев Александрович Журбин | RU, Wikidata
 2rnZ3TYlGce0bg2ogrtShe # Борис Гребенщиков | RU, Wikidata
 1rSGNXhhYuWoq9BEz5DZGO # Arty | RU, Wikidata
 57sYUm2Hx9a2ZCb7Ds32S0 # Пётр Андреевич Налич | RU, Wikidata
 2ymj9CH2kUrvYhbs9T0pqh # Мельница | RU, Wikidata
 2gpg8gZUAYGGVIKBSVbjX6 # Муцураев, Тимур Хамзатович | RU, Wikidata
-3enXY52UlrP6E6DbqE1jVN # Туган Таймуразович Сохиев | RU, Wikidata
 3ANNnVJ7NCdIZV6P2YzvlI # Филипп Киркоров | RU, Wikidata
-1Ru2MsKaiEbw3TPXeEelQq # Муллова, Виктория Юрьевна | RU, Wikidata
 5B2tbHAKw3oKXqkor1niNG # Анжелика Агурбаш | RU, Wikidata
 3DT7Hg7rFugAITZoVe9c0H # Анна Семенович | RU, Wikidata
 4wfEcCV9T72akw5TYeW8nS # Смолова, Полина Петровна | RU, Wikidata
@@ -557,26 +539,17 @@
 1OO8Vfq4oSKINYSaCsaFEf # Сайнхо Намчылак | RU, Wikidata
 36EFr1cAJArAbT7pucYzmw # Сайнхо Намчылак | RU, Wikidata
 1bqX3GXTtx28hvjGNiwCcH # Гоша Куценко | RU, Wikidata
-1x14jaR5xQ4RkVlYN48OlY # Полянский, Валерий Кузьмич | RU, Wikidata
-6pxIDyVKYvAoqlDX9miQQG # Самуил, Татьяна Александровна | RU, Wikidata
 3ZYyACrojw2Z6JnmD45CEl # Ю-Питер | RU, Wikidata
-5ieRNtQmVhIhCkQA4ZkK6L # Василий Серафимович Синайский | RU, Wikidata
-0604Eow92EXTCLStZOUNlG # Любимов, Алексей Борисович | RU, Wikidata
 669H31maTt6CHM6MJB3Aq6 # Анастасия Стоцкая | RU, Wikidata
 2eLrVxwm6t4QeaORq5w8VW # Григорий Лепс | RU, Wikidata
 1DE5xn8H1QZuPCurMNiLYe # Александр Сергеевич Панайотов | RU, Wikidata
 72B99GBEFdbbEAfmKMdYrr # Ундервуд | RU, Wikidata
 7C9GAYo8fgm7BlTGWbazeJ # Каста | RU, Wikidata
-1fUhTALoWXPL6PZSkKImY9 # Даниил Олегович Трифонов | RU, Wikidata
 5gxktmdAF1qbL272F1EaNM # Ирина Салтыкова | RU, Wikidata
-4ubw8HtvzKXB8TTfNDEGZu # Князев, Александр Александрович | RU, Wikidata
 21WxeFt6mxgD9P8lM9RXN3 # Монгол Шуудан | RU, Wikidata
-56zD3vlVlbxtkfNPaznQoA # Владимир Михайлович Юровский | RU, Wikidata
 58gyHFyLoEM1rVTrPTa4vE # А’Студио | RU, Wikidata
 0sKY9AcBdiGx4FbFbQsXoX # Эмин | RU, Wikidata
-5qMBLEXzjUzluINxhkJzla # Анастасия Юрьевна Волочкова | RU, Wikidata
 40edmg1pVhEKklKU7BCo1n # Тимур Родригез | RU, Wikidata
-6H9eOWeGZkU9alBUYqNR7Q # Петренко, Василий Эдуардович | RU, Wikidata
 0WjNZcwh7ElaNtGQNIAG0J # Инь-Ян | RU, Wikidata
 7GQkGMp7NcATMCru95ES3N # Эпидемия | RU, Wikidata
 4UgqiqPvSvh1MKJjinADeL # Plazma | RU, Wikidata
@@ -584,24 +557,18 @@
 1qqNkaZGPRMuPsbyff8zQg # Парк Горького | RU, Wikidata
 2w2Nz58wbRf3qkZlMyUVId # Татьяна Хашимовна Никитина | RU, Wikidata
 14Ga8jVl4C81h3kRHqlDRC # Рубль | RU, Wikidata
-5kVtpJb6qR0jlHoSgbRaGk # Лия Меджидовна Ахеджакова | RU, Wikidata
-5b3ITDEG6aHMNbA75778I8 # Калер, Илья Леонидович | RU, Wikidata
 2RPnfaY31zOrWvpJYRfmIe # Ольга Орлова | RU, Wikidata
-37RO5RYH0ouT5eJzWhdfWn # Евгений Судьбин | RU, Wikidata
 2PlWeOaiLNS2KwgHkyPGxr # Ранетки | RU, Wikidata
 3B8mGrQqFROCKEBo4II0Jf # Ранетки | RU, Wikidata
 6uqnggb1uJbtZI4u3aLyBe # Alkonost | RU, Wikidata
 5jpdn32kITdVr85niBEu02 # Пелагея | RU, Wikidata
-3HJ0cDihIkL0d5eQwkoToe # Константин Лифшиц | RU, Wikidata
 4zFfzqqLF8ZPRIirvsDsRz # Альбина Борисовна Джанабаева | RU, Wikidata
 7CGHKIH7vfFcppGz1QurCv # Елена Беркова | RU, Wikidata
 5u2CVxsCcq5rfB8J7ClAAL # WelicoRuss | RU, Wikidata
 3cEAYaO1IV0u7DphbZ3AM2 # Наталья «Хелависа» О’Шей | RU, Wikidata
 3OJhU2ror4iQcBd1C5LlTE # Наталья «Хелависа» О’Шей | RU, Wikidata
 4uyptB9Hp8N6pjqSZJ9dSW # Маша Распутина | RU, Wikidata
-1XoZvgPZL4zkSpKmuMfz6T # Ольга Пащенко | RU, Wikidata
 0JkZx7iuwTKctFuJABtYuf # ViRUS! | RU, Wikidata
-4lXqCIiOQaKszIABIsOyrI # Юлия Лежнева | RU, Wikidata
 37OpNbPeuU9L31M8ZRqi72 # Оксана Александровна Почепа | RU, Wikidata
 5KCxp18eiaBwdl04QZaOYq # Зара | RU, Wikidata
 5JqTYkY8E7ubUFVgRVS512 # Игорь Крутой | RU, Wikidata
@@ -644,7 +611,6 @@
 7KgU3AwBAg5kFaiJpVWVKM # Сергей Минаев | RU, Wikidata
 21jKFuyZYmPG4x5c70biPU # Юлия Михайловна Беломлинская | RU, Wikidata
 1XOaGxApYGtKHM5hj9G7AC # Василий К. | RU, Wikidata
-15G7fVT9efvVtWjHSZVBUw # Владимир Николаевич Минин | RU, Wikidata
 1g9pzRy0QLdhIXSe4N811p # Блондинка КсЮ | RU, Wikidata
 4LUBhb9rFVqwcuNo1w8y45 # Беzумные Усилия | RU, Wikidata
 0FC9nDO9Ihq0pbuRok7N9T # Георгий Леонардович Васильев | RU, Wikidata
@@ -660,7 +626,6 @@
 1guMgjBhpv9WjL911qnVab # Лада Дэнс | RU, Wikidata
 3VA9uKRBaU00ULEmXGjaaT # Лада Дэнс | RU, Wikidata
 4V22duXbqrvsuGiU4Psdfc # Иван Николаевич Бурляев | RU, Wikidata
-2j6NdlCUSn5mXEwgI3ukVQ # Карен Аванесян | RU, Wikidata
 50tOhroB7r5g2X8HNzctf9 # Сергей Григорьевич Беликов | RU, Wikidata
 38A3yUMl5xcSrXEM1tEUH2 # Рашид Фагимович Калимуллин | RU, Wikidata
 5uuYsSXKo8eyr0pipfQcEh # Ирина Отиева | RU, Wikidata
@@ -671,7 +636,6 @@
 6ddZlUAVlXnOUgom2rqLMe # Алексей Иващенко | RU, Wikidata
 45FEqQGgNljUg0aBVrfitc # Юлия Ахонькова | RU, Wikidata
 79jn41C8FhltpZo4XWxJUv # Быков, Евгений Николаевич | RU, Wikidata
-151UC31SM5tah3mtazeKck # Невский, Сергей Павлович | RU, Wikidata
 3zWJVQbVbLji9cnYhZupPO # Николай Александрович Воронов | RU, Wikidata
 1fpc0waulI25ATCnhM2TYq # Куприк, Сергей Васильевич | RU, Wikidata
 4VsaesICXLwHOtRdRjxpYf # Доминик Джокер | RU, Wikidata
@@ -696,7 +660,6 @@
 3NiLgAE6MpEsaoY6n0eYYp # Елена Борщёва | RU, Wikidata
 76EBAUEOro4uaC6200Nr82 # Томас (группа) | RU, Wikidata
 5CmL1U7pBp7xbxVng3LAME # Светлана Разина | RU, Wikidata
-5GtpXDjBbXYKrHEiCvQBZD # Гундорина Мария | RU, Wikidata
 1JjIKP5IOuEDXQVZsbUiB2 # Кристиан Костов | RU, Wikidata
 1qTdMU3AQNhkAa4qnD8zVQ # Николай Трубач | RU, Wikidata
 4YvTxqMYsBZhTljeOxmQ47 # Виктор Салтыков | RU, Wikidata
@@ -711,7 +674,6 @@
 3ylLnr2QKA0Fz6k0EB48hh # Чёрный кузнец | RU, Wikidata
 7lbctmrBgR9SHvNWA5BvGI # Урасин, Рэм Геннадьевич | RU, Wikidata
 2z89Tht4fN0LAlMPxLzeAC # Silent Woo Goore | RU, Wikidata
-5Qay5yizWXqdijRvNd5KX2 # Эдвард Сноуден | RU, Wikidata
 1vcaXwpXV1n1IlIJvOe0Nx # Sattuma | RU, Wikidata
 3BhmveF70EYEU5Rhtn2lqL # Александр Сергеевич Устюгов | RU, Wikidata
 7gxE9KvBYn6AV533pL0pOV # Begerith | RU, Wikidata
@@ -720,7 +682,6 @@
 0v1aOu7Uj1wVNyuhGRJpjz # Дмитрий Спирин | RU, Wikidata
 1oZmFNkGAT93yD1xX4vTRE # Нина Кравиц | RU, Wikidata
 2N6ovxTbZJfQBpTehOI5wR # I Am Waiting for You Last Summer | RU, Wikidata
-42Eyhodo3phBTcv5gJtl4F # Бохон, Виктор Фёдорович | RU, Wikidata
 2qMDhArqb5y9uoCnLxN7q5 # Курасов, Владислав Викторович | RU, Wikidata
 773hcub2idyGAyiVuUlVUa # Ангарская, Надежда Викторовна | RU, Wikidata
 7ndhEYbjUwKBFHZN0jB2x1 # Гусейнов, Аслан Сананович | RU, Wikidata
@@ -741,18 +702,13 @@
 3cLEsISlZNZOGqF8PzBy8M # Наталья Валентиновна Сенчукова | RU, Wikidata
 76fUt4u1KHH989VVywBvq0 # Гарри Ананасов | RU, Wikidata
 0pnd3MP2rxAzljR9AqXUJB # Little Big | RU, Wikidata
-2eKUSLA2vhWBFsMN0RoBxY # Тихомиров, Борис Юрьевич | RU, Wikidata
 0RB7SpNZsNjiDhEXDDQpfZ # Noid | RU, Wikidata
 5XDaQHUHkcCk0fYizacRGD # Павел Титов | RU, Wikidata
 1QiF6Bc5zM5dCameAim7bd # Алика Смехова | RU, Wikidata
 3zO2ODcb95Y96n0Gl1bzHt # Элизиум | RU, Wikidata
-6uzEfVDOARGZSMZffkz7nP # Хайрутдинов, Рустем Авзалович | RU, Wikidata
-2YU2DA6yZZ0pmcR4utb3TM # Фельцман, Владимир Оскарович | RU, Wikidata
 5mgIPYXf55SEmZcPdeECK7 # Сурганова и Оркестр | RU, Wikidata
 1iE1JxiBzarHj1zK1FvGVW # Лена Зосимова | RU, Wikidata
-1fT9oaa9EkvjHUHotGU4R3 # Джина Джерсон | RU, Wikidata
 3A9o9mS74tZ4P4dvzDL35D # Лидия Исак | RU, Wikidata
-02Vj4LWgYo3AREbMnN3e7R # Игнат Александрович Солженицын | RU, Wikidata
 09tP2EPNNwU20jaHUgXBG2 # Юлианна Юрьевна Караулова | RU, Wikidata
 5g5TiYIFYfiaEnl3b9mBs9 # 3000 миль до рая | RU, Wikidata
 34FlKxqdftYhJy6BQubuHy # Bahh Tee | RU, Wikidata
@@ -763,26 +719,21 @@
 6dWlKxiqNeXeyjYoHMHvbg # Жанна Рождественская | RU, Wikidata
 1VxM2eQ7fzUvCHmZVE3Hnc # Юлия Олеговна Самойлова | RU, Wikidata
 6qqXs7lgi2UcpZl2PfEnpO # Kristina Si | RU, Wikidata
-2dkym0Bb1cIWiyIZWiRT8E # Ишмуратов, Айрат Рафаилович | RU, Wikidata
 15IDvm7vU7yN2PQGHkgcP5 # Alexander Rosenblatt | RU, Wikidata
 35iK5Y3rC4AtYbtFxJilAc # Станислав Ярушин | RU, Wikidata
-2tN85nfcRknWuIC7ZAJMxJ # Роман Белавкин | RU, Wikidata
 1tPjILOuTuIsdLuiuJyDPF # Кагирова, Патимат Мухтаровна | RU, Wikidata
 3wJPV997Cg3tNkWt4Hda6U # Аркадий Укупник | RU, Wikidata
 2FQYsotYr3dJJqIDAlJofH # Владимир Петрович Осинский | RU, Wikidata
-1VkSR4bQvPSdzsPCZykm3j # Ирина Анатольевна Горбачёва | RU, Wikidata
 7AbbBPc6lhIOF9wPay9rE2 # Екатерина Семенчук | RU, Wikidata
 6AskOVL13sRjMWnL45lxp0 # Tatarka | RU, Wikidata
 53aUJxJ1326j2Zj7ilFybn # Соколов Александр Андреевич | RU, Wikidata
 6fYvyj8razige7PRfHoi9c # CROSSPARTY | RU, Wikidata
 6RfwEMCrHyuNLQQiu7Fjbs # Плужников, Данил Владимирович | RU, Wikidata
 3VeCNBx8ON6OJs4Usx9rY4 # Шпильки | RU, Wikidata
-1sKN9YPFXTV62sKONJUY8H # Конторович, Лев Зиновьевич | RU, Wikidata
 4e2r3XfthFQ9vsl6i7DeT3 # Осетинская, Полина Олеговна | RU, Wikidata
 48Mg7JaclPFMCGf4tXdPQn # DK | RU, Wikidata
 6r5DjBbGprhFYiEGTWunHU # Убийцы | RU, Wikidata
 2z658O7sY52T18CIOqUcws # Дмитрий Редько | RU, Wikidata
-36CgM42AtIA5SEne7Wou7q # Максим Юрьевич Емельянычев | RU, Wikidata
 1eD87FGN51kyzJLLUfvWd7 # FakTyrA | RU, Wikidata
 4nf8YWTdzI3hPTBA8dDsgS # Lifeless Existence | RU, Wikidata
 3q99FhugmuibswXhLK0N0K # Big Russian Boss | RU, Wikidata
@@ -809,7 +760,6 @@
 1Y53ZUhXBydAzILo4Qa0s1 # Манижа | RU, Wikidata
 7rMnR1aJEwupNuv9x4dNoT # Fellirium | RU, Wikidata
 0Wz7sOQ2IVY0VfCR6SFzF1 # Бакей | RU, Wikidata
-5LtSXvgNXLoarTerMPW7DA # Медяник, Юрий Владимирович | RU, Wikidata
 6uJBtEVO0Y6rJriyOEUlIY # Квитатиани, Торнике Гурамович | RU, Wikidata
 3QFXxlWMDSRABMc79TKS5U # Олег Белоусов | RU, Wikidata
 2TtHWx2FoOJgLRdo6Ry3JV # PLC | RU, Wikidata
@@ -821,7 +771,6 @@
 2Nl6vz4KNIHQjyoOLTadCn # Loqiemean | RU, Wikidata
 5kEEihcKrEn8CN2uebk1sC # Trelleborg | RU, Wikidata
 6OqmKFaRcw0f23m5PQ9CrL # Антоха MC | RU, Wikidata
-5YTv73kx90eX0jdjxERsKq # Всеволод Гривнов | RU, Wikidata
 4xnihxcoXWK3UqryOSnbw5 # Саша Слоан | RU, Wikidata
 7rSykIe3Og1NMbIV6LOeVx # CHVRN | RU, Wikidata
 4WWPJTivvjtdSma1ZwIf3e # Юрий Михайлович Хованский | RU, Wikidata
@@ -842,7 +791,6 @@
 10tDy4huaPLHEIkXGRZd6p # SASHA ₴ѺѺ | RU, Wikidata
 3luonLzvSOxdU8ytCaEIK8 # IC3PEAK | RU, Wikidata
 36VSvhsPFTdsj1CtmatPiQ # Shapov | RU, Wikidata
-74LRCd9Ygg6LNVk7NuRrVV # Дмитрий Макаров | RU, Wikidata
 1hKtAocjfjS9OpOmI4hmSo # Френдзона | RU, Wikidata
 61j4FFbKlzdYihMtpM1hZD # Shortparis | RU, Wikidata
 6AjffBv5hBZYCUyZ19wp4w # Wialenove | RU, Wikidata
@@ -852,7 +800,6 @@
 3spV4ipk7tqVzM7n494tr5 # Sleep Dealer | RU, Wikidata
 1NIk8nxtiRbQuib3gWrcZV # Supernova 1006 | RU, Wikidata
 5laAqNfSTmMyXv0E4XRUzg # Ганвест | RU, Wikidata
-3qdJSVIcVRLZtEUpLywLlv # Никита Миллер | RU, Wikidata
 07tFgedhta5b5WaF0Yj4bH # Saluki | RU, Wikidata
 4tOH3IPEFxMsdHEP1rNhPJ # Виктория Черенцова | RU, Wikidata
 3cmfyZ8hRHaN2CO9Qo4j35 # polnalyubvi | RU, Wikidata
@@ -879,7 +826,6 @@
 3VaTByVDDBYrg13DpZKc55 # Ауткаст | RU, Wikidata
 3LUMBFJxOuegaGLLtbOTOc # Рамазанова, Кристина Владимировна | RU, Wikidata
 3Hlp7o0Wfy8UpZ3mohj63k # △Sco△ | RU, Wikidata
-236pKlgnAuFOFx8Cq5eNrE # Khusen Rustamov | RU, Wikidata
 7aTmgp3whB8ioW6ZYuBCfm # Катя Адушкина | RU, Wikidata
 3pJuDuFyP5uxCHDpXPczf4 # Pinkshinyultrablast | RU, Wikidata
 0ZcPSxQgQyZGsZVLWuP1Nv # Milana Star | RU, Wikidata
@@ -907,7 +853,6 @@
 73AXOp3t6ik1YiJjINRvMm # Дети Rave | RU, Wikidata
 71O7aXuBxrEtu1ap3tryzo # Mary Gu | RU, Wikidata
 2k1c6dPE8SBQpQlR0mwAQn # Мурат Заурович Кабардоков | RU, Wikidata
-30Mlx4aHCUpyZCzNV46nBf # Димитрис Ботинис | RU, Wikidata
 1OM77yR5HCnIhqj4Oipl8s # Лёша Свик | RU, Wikidata
 1vRQhduO7bDkd6cAS6c3td # 2Маши | RU, Wikidata
 4DL9ezuihh5ZIyYl1NhhNM # Шарлот | RU, Wikidata
@@ -929,8 +874,6 @@
 17nL032GodoUqEh4ajjGcJ # Владимир Галат | RU, Wikidata
 7m7b6ITjIHViCpDVIdEAGD # Арсений Креститель | RU, Wikidata
 4oDeXiBBErQcEr3MuSJiVs # Аня Pokrov | RU, Wikidata
-5zhUzhWtkJLmtiZJAoIicc # Домна Максимовна Хомюк | RU, Wikidata
-7pKdR0jBukN0kTyWKIyFjB # Домна Максимовна Хомюк | RU, Wikidata
 0MGeaflIg2XOVUU0kw3CoJ # Сюзанна | RU, Wikidata
 6Gk9dBiOslC7BfljIWmzj2 # Сюзанна | RU, Wikidata
 6B5Zl02CQSrQzXS2xDUVzc # Манук Казарян | RU, Wikidata
@@ -949,7 +892,6 @@
 34PExmV9Ag8w7avu1UyruA # Ханза | RU, Wikidata
 2yVkixFeLpn8PNSdAtditR # Султан Лагучев | RU, Wikidata
 0botW5W7KGHTm8BkLemEH8 # Parks, Squares and Alleys | RU, Wikidata
-0Gt2wErjG790C9Q7LHoVjQ # Кляузер | RU, Wikidata
 1gSZGX47zZPhr8DYyR5bUC # Артур Бабич | RU, Wikidata
 3mp8k7Zur2bxwSEte1uO4M # Дарья Андреевна Зуева | RU, Wikidata
 3r49FMrSjn3bceDXHMTwIo # Pragmatica Project | RU, Wikidata
@@ -983,7 +925,6 @@
 1Uf3QoT2BwTN9ZW71cIiAo # Dabro | RU, Wikidata
 5tc40T8GqL45lH8SaHPIcY # Слава Кудинов | RU, Wikidata
 75BxFVHv6szVslhtw2ePYd # Post-dukes | RU, Wikidata
-5bHoyMvaJDRgeNdSv1ZzIQ # Наталья Богелава | RU, Wikidata
 4CBVB0kCggeUNBrAaBs83s # Любовь Шепилова | RU, Wikidata
 1N3mwR0Jd4sxqr3FIywKmC # Аня Севагина | RU, Wikidata
 5l96NpElz21MyTsQGPgu8d # SLEEPY | RU, Wikidata
@@ -997,7 +938,6 @@
 0pdjdl0hHryTPSerx1M33w # HOOD GOTH | RU, Wikidata
 7GtPtPbDC5CLNzSNxVpqaf # Бритни Мэнсон | RU, Wikidata
 78jhBlHxbn7dBG2JtZc5rf # Алёна Михайлова | RU, Wikidata
-5yikNJEFC76ofAAVy7Bxak # JesusAVGN | RU, Wikidata
 2upGONMlbcUhDMGUdMyuL7 # Сергей Ахунов | RU, Wikidata
 1sobKukr5YgrNAQAT2Z6up # Miusha | RU, Wikidata
 6Zec7ick9FQ7UHtqQGx0FX # Пёс и группа | RU, Wikidata
@@ -1013,10 +953,8 @@
 3V4zsOh1XZGGzrH7EVi144 # Bearwolf | RU, Wikidata
 6Dut9q75GPMesqrEnC6CPL # W1tch 1337 | RU, Wikidata
 4ENNw1y7XuWPt7tvzoQ8Pz # Kambulat | RU, Wikidata
-7hWYGKlWRqdU12qJT9aTKY # Роман Парамонов | RU, Wikidata
 3YLD9xcNo3yITqGU3opXzJ # Софи Окран | RU, Wikidata
 7eIeVNijY9kiW0Fae2MPLc # Ахмед Шад | RU, Wikidata
-2TGfzbEaJkHLEsRvryVhsJ # Екатерина Шелехова | RU, Wikidata
 7xwtPPSV57xWibESqyieio # merccifuul | RU, Wikidata
 432rkAWvzoOEUgtN7UZfOj # нексюша | RU, Wikidata
 44nbg7EudNDYsTHPrSXdMG # DMITRAK | RU, Wikidata
@@ -1118,7 +1056,6 @@
 4bAoPku7d3g1A0P2MpZGjN # Green Apelsin | RU, Wikidata
 1tYoztDGZpCHSg8olMEU6m # Игорь Владимирович Левин | RU, Wikidata
 62CiXsONQzA6LiU1eKLVoK # Драгни | RU, Wikidata
-4c7dKXl8YE3mffaqwxLTb4 # Светлана Меерманн | RU, Wikidata
 5qjfzysMFcmnHxVah6L6GW # Saphath | RU, Wikidata
 3OCf90f2ZVG59KdJn0axMs # Рома Пан | RU, Wikidata
 4C1U2GeZXNdD7rgju7GRPv # Владимир | RU, Wikidata
@@ -1127,8 +1064,6 @@
 6AdSG5kLV3rh6Bw1CX9cIS # Сагит Гыйбашев | RU, Wikidata
 1rDgXk4BYykvC56CDp14Dy # Kick Chill | RU, Wikidata
 57LJ0REqRqqMJEIMBZotTx # Chikoi The Maid | RU, Wikidata
-1EDACwoK6bTofoniP9c3IR # Николай Борисович Булаткин | RU, Wikidata
-5tPkLidZowFFeKQ3mASKa2 # Расул Абдулкеримович Чабдаров | RU, Wikidata
 5mzTr70OcAfZWMUF8BSjAm # Лауд (группа) | RU, Wikidata
 6eTjtC0wPWpsJ7CXWJ5rYk # Юрий Наизнанку | RU, Wikidata
 1aGPTAY3Xcvc22oN7sSDAS # EVASHA | RU, Wikidata
@@ -1160,7 +1095,6 @@
 0YMFQZ6CO0v8lm9rc2sFJ3 # Иосиф Давыдович Кобзон | RU, Wikidata
 3tA5pfxMT39iSl3L7nN8ez # Анна Волкова | RU, Wikidata
 743iE4ugOJK6u45x1UNdVq # Никулушкина, Анастасия Захаровна | RU, Wikidata
-7aAk8tq5beoR0ThqpbGb1A # Дарья Александровна Дугина | RU, Wikidata
 73DX6DhqQE4gi6p8XhPeAJ # Анна Каст | RU, Wikidata
 2hThsqaVEAWhWPBXnaOfB9 # Pussy Riot | RU, Wikidata
 462MHuYBRlk95DjzQw1t84 # Магистр | RU, Wikidata
@@ -1173,8 +1107,6 @@
 2yEI0cAmymsKh1vubNYjbs # Ярослав Александрович Евдокимов | RU, Wikidata
 178eHel8pvCdCksXAJ4F2y # Юрий Морозов | RU, Wikidata
 1Xn63te285xspwTuXSt3Gv # Range of Truth | RU, Wikidata
-2xcUqNAHTLVnHeK0YLA9IO # София Асгатовна Губайдулина | RU, Wikidata
-1xfayCGnoPqO2Wh3Y27IgG # Светланов, Евгений Фёдорович | RU, Wikidata
 76ZWj3HUTyD20CuUKBssEN # Родионов, Андрей Борисович | RU, Wikidata
 08pXfHf1e4hLeDz1BgmOqL # Орига | RU, Wikidata
 2Jt5S2Ycamysen8uzlewZD # Виктор Архипович Луферов | RU, Wikidata
@@ -1183,8 +1115,6 @@
 317m3f4cTJ0tNPfp5Pjugj # Q140623892 | RU, Wikidata
 5evpZIQaR6657akpHatz0y # Михаил Иванович Ножкин | RU, Wikidata
 0LodFojYas7R7973dnbOMb # Константин Валентинович Ступин | RU, Wikidata
-5eEBBZgows0I1DOsOl0BP0 # Родион Константинович Щедрин | RU, Wikidata
-0IuqAyi5CMgpuyhckrcqNs # Марис Арвидович Янсонс | RU, Wikidata
 2U3cnraea9lIQBraKzlQbv # Евгений Викторович Осин | RU, Wikidata
 20mh1R2iszLiPKWFJVgXaF # Муслим Магометович Магомаев | RU, Wikidata
 2YrlCsETDHUEjbtnGJNr7W # Муслим Магометович Магомаев | RU, Wikidata
@@ -1192,13 +1122,10 @@
 4IgWjqF8kl1fam59sto2kt # Дмитрий Павлович Василевский | RU, Wikidata
 4UCof1AcemyEROACiQH8bD # Телешев, Леонид Михайлович | RU, Wikidata
 4qcM91DjO4tz7yS4cz8Upi # Cancer Hammers | RU, Wikidata
-7vBnSN2AEBn0Hw1SidXvw1 # Вероника Борисовна Дударова | RU, Wikidata
 5Lbn8Ucj0feLR481575YtR # Кукин, Юрий Алексеевич | RU, Wikidata
 4lw4yhQJlm5xwpXUCxxiqo # Клара Румянова | RU, Wikidata
 0MiJVAtMX8g494r2i1FDwm # Эдуард Артемьев | RU, Wikidata
-2D1TzJM0YH19ygYlS96Bfy # Владимир Феодосиевич Красноскулов | RU, Wikidata
 3AE8JX7BxqvAN4NKvwHNl1 # Murda Killa | RU, Wikidata
-50hiYMhi0g77BOkkQ4zebB # Мстислав Леопольдович Ростропович | RU, Wikidata
 3AXDXD5zXzg1Y3UO1peVPq # эхопрокуренныхподъездов | RU, Wikidata
 0iKm12gtvdFj9GJv9YajiB # Strontium | RU, Wikidata
 1u9WmQesE5Av9Biq1681ON # 7 H.Target | RU, Wikidata
@@ -1215,24 +1142,17 @@
 1zBSxEXQ0vy1dDI9cOcPd8 # Grailight | RU, Wikidata
 13u9cUAIocCeJX09VeluXo # Илья Владимирович Алтухов | RU, Wikidata
 5AhN3cikCXyZMwhw3drxd9 # Minuala | RU, Wikidata
-7mg97KvKqG2HPcMup72HoX # Евгений Лебедев | RU, Wikidata
 1hNMMv7GvIaCNr1YRKqTGL # Hellrune | RU, Wikidata
-7sjMk07ASNAAPVXoag7sGO # Геннадий Николаевич Рождественский | RU, Wikidata
 3rgsU5xlJSSTEReOCMDtwo # Крис Кельми | RU, Wikidata
 5vl0DbD6PJ4cP17zZ7JM4d # Ольга Федосеевна Сергеева | RU, Wikidata
 6tcdpQn32WlzB81qhAZxDB # Владимир Константинович Трошин | RU, Wikidata
 1LpoOdPT7XPQA1yv6HyK79 # Котомцев Максим Евгеньевич | RU, Wikidata
-5P6p90HYfFxo4GTmHJjeNe # Дмитрий Александрович Хворостовский | RU, Wikidata
 5MqTDLFGrNIXISAjmi4hoS # Амирамов, Ефрем Григорьевич | RU, Wikidata
-43FqjuAdZNLw8BKi4YPJt6 # Уствольская, Галина Ивановна | RU, Wikidata
 7KSPZyeCKkfkhMkX8rYIhD # Grima | RU, Wikidata
 5ddJy6eApHTwERl985ZB76 # Ильченко, Юрий Владимирович | RU, Wikidata
-2bxnWcGah5s0CXlTdznGNe # Владислав Александрович Чернушенко | RU, Wikidata
-5GvNmaT3HuZEZQyWqzTCgP # Рудольф Борисович Баршай | RU, Wikidata
 421IlfvblWvHnBOFnResJF # Стратонитская, Ульяна Борисовна | RU, Wikidata
 6V6RcJ4xoTLbwPq6PtRCYx # Юрий Николаевич Шишаков | RU, Wikidata
 5A1Jnl5vj0opd3QgZ90wYD # Александр Александрович Шевченко | RU, Wikidata
-3B2Ms2Lu80pSd5R2aXlhFG # Худолей, Игорь Леонидович | RU, Wikidata
 2YalODxP9p7fzz91epiQ6R # Хайрова, Сабина | RU, Wikidata
 0Jn6SkJMSlarXkWrfOcgFX # Новелла Николаевна Матвеева | RU, Wikidata
 # --- Додано пошуком за іменем (відомі виконавці, яких не було в джерелах) ---
