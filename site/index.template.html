@@ -26,13 +26,6 @@
   a.btn.shake { animation:shake .4s; }
   #hint { display:none; margin-top:10px; padding:10px 14px; border-radius:10px; background:#fff3cd; color:#5c4400; font-size:15px; }
   #hint.on { display:block; }
-  .sub { background:var(--card); border-radius:12px; padding:16px 18px; }
-  .sub textarea, .sub input[type=text] { width:100%; font:inherit; font-size:15px; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--fg); }
-  .sub textarea { min-height:90px; resize:vertical; }
-  .sub button { margin-top:10px; padding:10px 20px; border:0; border-radius:24px; background:var(--accent); color:#000; font:inherit; font-weight:700; cursor:pointer; }
-  .sub button[disabled] { opacity:.5; cursor:default; }
-  .sub .msg { margin-top:10px; font-size:15px; }
-  .sub .hpf { position:absolute; left:-9999px; }
   details { background:var(--card); border-radius:12px; padding:12px 16px; margin:0 0 12px; font-size:15px; }
   details summary { cursor:pointer; font-weight:600; }
   details textarea { width:100%; min-height:110px; margin-top:8px; font:12px/1.4 ui-monospace,monospace; padding:8px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--fg); }
@@ -66,16 +59,6 @@
   <p><b>Як зняти бан?</b> На сторінці виконавця натисни кнопку із закресленим колом.</p>
   <p><b>Хто в списку?</b> Це список, який складають автор і учасники проєкту. Критерії та спосіб додати чи оскаржити артиста: <a href="{{REPO}}">репозиторій на GitHub</a>.</p>
 
-  <h2>Запропонувати виконавця</h2>
-  <div class="sub">
-    <p style="margin:0 0 8px;color:var(--muted);font-size:15px">Встав посилання на сторінку виконавця в Spotify (по одному в рядок). Автор перевіряє кожну пропозицію вручну, нічого не додається автоматично.</p>
-    <textarea id="sl" placeholder="https://open.spotify.com/artist/..." aria-label="Посилання на виконавців"></textarea>
-    <input type="text" id="sn" maxlength="300" placeholder="Чому його варто додати (необов'язково, але з джерелом простіше)" style="margin-top:8px" aria-label="Пояснення">
-    <input type="text" id="hp" class="hpf" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <button id="sb" type="button">Надіслати</button>
-    <div class="msg" id="sm" role="status"></div>
-  </div>
-
   <p class="note">Проєкт не пов'язаний зі Spotify. Скрипт автоматизує кнопку в веб-плеєрі, яку Spotify дає кожному користувачеві; інтерфейс сайту може змінитися, тоді скрипт треба оновити.</p>
 </main>
 <script>
@@ -94,42 +77,6 @@
         h.className = 'on';
         b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
       });
-    });
-  })();
-</script>
-<script>
-  (function () {
-    var SUBMIT_URL = {{SUBMIT_URL}};
-    var REPO = '{{REPO}}';
-    var sl = document.getElementById('sl'), sn = document.getElementById('sn'), hp = document.getElementById('hp');
-    var sb = document.getElementById('sb'), sm = document.getElementById('sm');
-    function parse(text) {
-      var re = /(?:artist\/|spotify:artist:)([A-Za-z0-9]{22})/g, m, ids = [];
-      while ((m = re.exec(text))) if (ids.indexOf(m[1]) < 0) ids.push(m[1]);
-      return ids;
-    }
-    function say(t, ok) { sm.textContent = t; sm.style.color = ok === false ? '#c0392b' : ''; }
-    sb.addEventListener('click', function () {
-      var ids = parse(sl.value);
-      if (!ids.length) { say('Не знайшов посилань на виконавців. Потрібне посилання на сторінку виконавця (open.spotify.com/artist/...), не на пісню чи альбом.', false); return; }
-      if (ids.length > 20) ids = ids.slice(0, 20);
-      var note = sn.value.trim();
-      if (!SUBMIT_URL) {
-        var body = 'Виконавці:\n' + ids.map(function (i) { return 'https://open.spotify.com/artist/' + i; }).join('\n') + '\n\nДжерело / пояснення: ' + note;
-        window.open(REPO + '/issues/new?title=' + encodeURIComponent('Додати: ' + ids.length + ' виконавців') + '&body=' + encodeURIComponent(body), '_blank', 'noopener');
-        say('Відкрив готову пропозицію на GitHub, залишилось натиснути «Submit new issue».');
-        return;
-      }
-      sb.disabled = true; say('Надсилаю...');
-      fetch(SUBMIT_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids: ids, note: note, hp: hp.value }) })
-        .then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); })
-        .then(function (x) {
-          if (x.j.ok) { say('Дякую! Отримано виконавців: ' + x.j.accepted + '. Автор перевірить вручну.'); sl.value = ''; sn.value = ''; }
-          else if (x.s === 429) say('Забагато пропозицій за годину, спробуй пізніше.', false);
-          else say('Не вдалося надіслати. Можна створити пропозицію на GitHub: ' + REPO + '/issues', false);
-        })
-        .catch(function () { say('Не вдалося надіслати. Можна створити пропозицію на GitHub: ' + REPO + '/issues', false); })
-        .then(function () { sb.disabled = false; });
     });
   })();
 </script>
