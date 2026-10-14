@@ -11,8 +11,8 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ID_RE = re.compile(r'^[A-Za-z0-9]{22}$')
-REPO_URL = 'https://github.com/RaftTone/spotify-ban-ru'
-PAGES_URL = 'https://rafttone.github.io/spotify-ban-ru'
+REPO_URL = 'https://github.com/mdanylch-dev/spotify-ban-ru'
+PAGES_URL = 'https://mdanylch-dev.github.io/spotify-ban-ru'
 LOADER = ("(async()=>{try{const r=await fetch('%s/ban.js',{cache:'no-cache'});"
           "if(!r.ok)throw new Error('HTTP '+r.status);const c=await r.text();"
           "await new(Object.getPrototypeOf(async function(){}).constructor)(c)()}"

@@ -2,7 +2,7 @@
 
 Закладка для браузера, яка одним кліком ставить «Не відтворювати пісні виконавця» для всього списку з цього репозиторію. Spotify не має офіційного способу зробити це масово, тому скрипт натискає ту саму кнопку, що й ти руками, але автоматично.
 
-**Інструкція для користувачів:** https://rafttone.github.io/spotify-ban-ru/
+**Інструкція для користувачів:** https://mdanylch-dev.github.io/spotify-ban-ru/
 
 Три кроки: перетягнути кнопку на панель закладок, відкрити open.spotify.com на комп'ютері, натиснути закладку. Паролі й дані нікуди не передаються, усе виконується в твоєму браузері.
 
@@ -28,7 +28,7 @@
 
 ## English
 
-A bookmarklet that bulk-applies Spotify's "Don't play this artist" to a community-maintained list of Russia-linked artists. Spotify's Web API has no endpoint for this, so the script drives the web player UI in your own logged-in browser; nothing is sent anywhere. Open the [instructions page](https://rafttone.github.io/spotify-ban-ru/), drag the button to your bookmarks bar, open open.spotify.com on desktop, click it. Contributions to `lists/blocklist.txt` are welcome via pull request.
+A bookmarklet that bulk-applies Spotify's "Don't play this artist" to a community-maintained list of Russia-linked artists. Spotify's Web API has no endpoint for this, so the script drives the web player UI in your own logged-in browser; nothing is sent anywhere. Open the [instructions page](https://mdanylch-dev.github.io/spotify-ban-ru/), drag the button to your bookmarks bar, open open.spotify.com on desktop, click it. Contributions to `lists/blocklist.txt` are welcome via pull request.
 
 ## Ліцензія
 

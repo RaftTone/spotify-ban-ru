@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-UA = {'User-Agent': 'spotify-ban-ru-review/0.1 (https://github.com/RaftTone/spotify-ban-ru)'}
+UA = {'User-Agent': 'spotify-ban-ru-review/0.1 (https://github.com/mdanylch-dev/spotify-ban-ru)'}
 
 
 def ids_in(path):
