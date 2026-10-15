@@ -1,10 +1,10 @@
 # Бан російських виконавців у Spotify
 
-Закладка для браузера, яка одним кліком ставить «Не відтворювати пісні виконавця» для всього списку з цього репозиторію. Spotify не має офіційного способу зробити це масово, тому скрипт натискає ту саму кнопку, що й ти руками, але автоматично.
+Закладка для браузера, яка одним кліком ставить «Не відтворювати пісні виконавця» для всього списку з цього репозиторію. Spotify не має офіційного способу зробити це масово, тому скрипт робить те саме, що й кнопка в плеєрі: надсилає запит до Spotify від твого імені пачками, а якщо не вийшло, натискає кнопку на сторінці кожного виконавця.
 
 **Інструкція для користувачів:** https://rafttone.github.io/spotify-ban-ru/
 
-Три кроки: перетягнути кнопку на панель закладок, відкрити open.spotify.com на комп'ютері, натиснути закладку. Паролі й дані нікуди не передаються, усе виконується в твоєму браузері.
+Три кроки: перетягнути кнопку на панель закладок, відкрити open.spotify.com на комп'ютері, натиснути закладку. Паролі й дані нікуди, крім самого Spotify, не передаються: скрипт працює в твоєму браузері й користується сесією, яка вже відкрита на сторінці.
 
 ## Як це працює
 
@@ -12,7 +12,7 @@
 
 - `lists/blocklist.txt`: список виконавців (Spotify artist ID та ім'я).
 - `lists/allowlist.txt`: виконавці, яких не чіпаємо, навіть якщо вони трапляються в blocklist.
-- `src/ban.js`: код закладки. Переходить на сторінку кожного виконавця, натискає «⋯ → Не відтворювати пісні виконавця» і перевіряє, що бан з'явився. Уже заблокованих пропускає.
+- `src/ban.js`: код закладки. Швидкий шлях: бере авторизацію з запитів самої сторінки й ставить бан пачками по 50. Резервний: переходить на сторінку виконавця, натискає «⋯ → Не відтворювати пісні виконавця» і перевіряє, що бан з'явився. Уже заблокованих пропускає.
 - `tools/build.py`: підставляє список у код і збирає сторінку-інструкцію. GitHub Actions робить це автоматично після кожного злиття в `main` і публікує на GitHub Pages.
 
 ## Як додати виконавця
@@ -28,7 +28,7 @@
 
 ## English
 
-A bookmarklet that bulk-applies Spotify's "Don't play this artist" to a community-maintained list of Russia-linked artists. Spotify's Web API has no endpoint for this, so the script drives the web player UI in your own logged-in browser; nothing is sent anywhere. Open the [instructions page](https://rafttone.github.io/spotify-ban-ru/), drag the button to your bookmarks bar, open open.spotify.com on desktop, click it. Contributions to `lists/blocklist.txt` are welcome via pull request.
+A bookmarklet that bulk-applies Spotify's "Don't play this artist" to a community-maintained list of Russia-linked artists. Spotify's Web API has no endpoint for this, so the script sends the same write request the web player's own button sends (in batches, using the session already open on the page) and falls back to clicking through the UI per artist; nothing is sent anywhere except Spotify. Open the [instructions page](https://rafttone.github.io/spotify-ban-ru/), drag the button to your bookmarks bar, open open.spotify.com on desktop, click it. Contributions to `lists/blocklist.txt` are welcome via pull request.
 
 ## Ліцензія
 

@@ -9,8 +9,12 @@ import urllib.parse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 IDS = '380174444,1383284912,837847154,278959467,1323091554'  # Земфіра, The Limba, Скриптонит, Yanix, ROCKET
 dry = '--dry' in sys.argv
-code = ''.join(l.lstrip() + '\n' for l in (ROOT / 'src' / 'apple.js').read_text(encoding='utf-8').splitlines() if not l.lstrip().startswith('//'))
-code = code.replace('/*IDS*/', IDS)
+def strip(name):
+    lines = (ROOT / 'src' / name).read_text(encoding='utf-8').splitlines()
+    return ''.join(l.lstrip() + '\n' for l in lines if not l.lstrip().startswith('//'))
+
+
+code = strip('apple.js').replace('/*COMMON*/', strip('common.js')).replace('/*IDS*/', IDS)
 if dry:
     code = 'window.__appleDry=true;' + code
 href = 'javascript:' + urllib.parse.quote(code, safe="!~*'()")

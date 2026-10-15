@@ -1,28 +1,17 @@
 (async () => {
   const IDS = ('/*IDS*/').split(',').filter(Boolean);
+  /*COMMON*/
   const KEY = 'banRuAppleDone';
   const DRY = !!window.__appleDry;
-  if (location.hostname !== 'music.apple.com') {
-    alert('Спершу відкрий https://music.apple.com, зайди в свій акаунт Apple Music, потім натисни закладку ще раз.');
-    return;
-  }
   if (window.__banRuAppleRunning) return;
   window.__banRuAppleRunning = true;
-
-  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-  const store = (() => { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { return {}; } })();
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} };
+  const ui = makeUI({ title: 'Менше російських виконавців', accent: '#fa2d48', bg: '#1c1c1e', muted: '#aaa', font: '-apple-system,system-ui,sans-serif', flag: '__banRuAppleRunning' });
+  if (location.hostname !== 'music.apple.com') {
+    ui.finish('Спершу відкрий <b>https://music.apple.com</b>, зайди в свій акаунт Apple Music, потім натисни закладку ще раз.');
+    return;
+  }
+  const { store, save } = makeStore(KEY);
   const sf = (location.pathname.match(/^\/([a-z]{2})\//) || [, 'us'])[1];
-
-  const box = document.createElement('div');
-  box.style.cssText = 'position:fixed;right:16px;bottom:96px;z-index:2147483647;width:300px;padding:14px 16px;background:#1c1c1e;color:#fff;border:1px solid #fa2d48;border-radius:10px;font:14px/1.4 -apple-system,system-ui,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.6)';
-  box.innerHTML = '<b>Менше російських виконавців</b><div id="br-st" style="margin:8px 0;color:#aaa"></div><div style="height:6px;background:#333;border-radius:3px;overflow:hidden"><div id="br-bar" style="height:100%;width:0;background:#fa2d48"></div></div><button id="br-stop" style="margin-top:10px;padding:6px 14px;border:0;border-radius:16px;background:#fff;color:#000;font-weight:700;cursor:pointer">Зупинити</button>';
-  document.body.appendChild(box);
-  const st = box.querySelector('#br-st');
-  const bar = box.querySelector('#br-bar');
-  const stopBtn = box.querySelector('#br-stop');
-  let stop = false;
-  stopBtn.onclick = () => { if (stop || stopBtn.dataset.done) { box.remove(); window.__banRuAppleRunning = false; } stop = true; stopBtn.textContent = 'Зупиняю...'; };
 
   // «Suggest Less» / «Пропонувати менше» і зворотний пункт «Undo Suggest Less» / «Відмінити "Пропонувати менше"»
   const UNDO_RE = /undo suggest|відмін|отмен/i;
@@ -46,7 +35,6 @@
     c.sort((a, b) => b.r.left - a.r.left);
     return c.length ? c[0].b : null;
   };
-  const waitFor = async (fn, ms) => { const t = Date.now(); while (Date.now() - t < ms) { const v = fn(); if (v) return v; await wait(250); } return null; };
   const closeMenu = () => { document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })); document.body.click(); };
   const openMenu = async () => {
     const t = headerTrigger();
@@ -59,8 +47,7 @@
   const go = async (id) => {
     const target = '/' + sf + '/artist/' + id;
     const prevTitle = document.title;
-    history.pushState({}, '', target);
-    window.dispatchEvent(new PopStateEvent('popstate', { state: {} }));
+    navigate(target);
     await wait(900);
     const ok = await waitFor(() => (document.title !== prevTitle && headerTrigger()) || null, 8000);
     if (!ok && location.pathname !== target) return null;
@@ -87,17 +74,17 @@
     return done ? 'banned' : 'failed';
   };
 
-  if (document.hidden) { st.textContent = 'Вкладка у фоні. Поверніться на неї, і перевірка почнеться сама.'; await waitFor(() => !document.hidden, 600000); }
+  if (document.hidden) { ui.st.textContent = 'Вкладка у фоні. Поверніться на неї, і перевірка почнеться сама.'; await waitFor(() => !document.hidden, 600000); }
   const startPath = location.pathname + location.search;
   const counts = { banned: 0, already: 0, missing: 0, failed: 0, skipped: 0, noitem: 0, dry: 0 };
   let n = 0;
   for (const id of IDS) {
-    if (stop) break;
+    if (ui.stop) break;
     n++;
-    bar.style.width = Math.round((n / IDS.length) * 100) + '%';
+    ui.bar.style.width = Math.round((n / IDS.length) * 100) + '%';
     if (store[id] === 'banned' || store[id] === 'already') { counts.skipped++; continue; }
     const left = IDS.length - n;
-    st.textContent = 'Артист ' + n + ' з ' + IDS.length + '. Лишилось приблизно ' + Math.ceil(left * 6 / 60) + ' хв. Вкладку не закривай.';
+    ui.st.textContent = 'Артист ' + n + ' з ' + IDS.length + '. Лишилось приблизно ' + Math.ceil(left * 6 / 60) + ' хв. Вкладку не закривай.';
     let r;
     try { r = await ban(id); } catch (e) { r = 'failed'; }
     counts[r]++;
@@ -106,29 +93,25 @@
     await wait(600 + Math.random() * 600);
   }
 
-  history.pushState({}, '', startPath);
-  window.dispatchEvent(new PopStateEvent('popstate', { state: {} }));
+  navigate(startPath);
   const okN = counts.banned + counts.already;
   const bad = counts.missing + counts.failed + counts.noitem;
   const diag = () => JSON.stringify({ counts, labels: [...seenLabels], ua: navigator.userAgent, url: startPath, hidden: document.hidden, total: IDS.length }, null, 1);
   let verdict;
   if (DRY && counts.dry && !bad) verdict = '<b style="color:#4cd964;font-size:18px">✅ Меню відкривається</b><br>Знайдено пункт для ' + counts.dry + ' виконавців.';
-  else if (stop && !okN) verdict = '<b style="color:#ff6b6b;font-size:18px">Зупинено</b>';
+  else if (ui.stop && !okN) verdict = '<b style="color:#ff6b6b;font-size:18px">Зупинено</b>';
   else if (okN && !bad) verdict = '<b style="color:#4cd964;font-size:18px">✅ ПРАЦЮЄ</b><br>Позначено виконавців: ' + okN + '.';
   else if (okN) verdict = '<b style="color:#ffcc00;font-size:18px">⚠️ ПРАЦЮЄ ЧАСТКОВО</b><br>Вийшло: ' + okN + ', не вийшло: ' + bad + '.';
   else if (counts.noitem) verdict = '<b style="color:#ff6b6b;font-size:18px">❌ НЕ ПРАЦЮЄ</b><br>У меню виконавця нема пункту «Suggest Less» («Пропонувати менше»). Потрібен акаунт Apple Music з підпискою.';
   else if (counts.missing) verdict = '<b style="color:#ff6b6b;font-size:18px">❌ НЕ ПРАЦЮЄ</b><br>Сторінки виконавців не відкрилися. Не перемикайте вкладку, поки йде перевірка, і спробуйте ще раз.';
   else verdict = '<b style="color:#ff6b6b;font-size:18px">❌ НЕ ПРАЦЮЄ</b><br>Кнопка натискалась, але виконавець не позначився.';
-  st.innerHTML = verdict + (DRY ? '<br><i>(пробний режим, нічого не натискалось)</i>' : '');
+  ui.stop = false;
+  ui.finish(verdict + (DRY ? '<br><i>(пробний режим, нічого не натискалось)</i>' : ''));
   const cp = document.createElement('button');
   cp.textContent = 'Скопіювати деталі';
   cp.style.cssText = 'margin:10px 8px 0 0;padding:6px 14px;border:0;border-radius:16px;background:#fa2d48;color:#fff;font-weight:700;cursor:pointer';
   cp.onclick = async () => { try { await navigator.clipboard.writeText(diag()); cp.textContent = 'Скопійовано ✓'; } catch (e) { window.prompt('Скопіюйте (Cmd/Ctrl+C):', diag()); } };
-  stopBtn.before(cp);
-  stopBtn.textContent = 'Закрити';
-  stopBtn.dataset.done = '1';
-  stop = false;
-  stopBtn.onclick = () => { box.remove(); window.__banRuAppleRunning = false; };
+  ui.btn.before(cp);
   window.__banRuAppleResult = counts;
   window.__banRuAppleLabels = [...seenLabels];
 })();
