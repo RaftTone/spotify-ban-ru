@@ -14,14 +14,59 @@
 
   const box = document.createElement('div');
   box.style.cssText = 'position:fixed;right:16px;bottom:96px;z-index:2147483647;width:300px;padding:14px 16px;background:#181818;color:#fff;border:1px solid #1db954;border-radius:10px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.6)';
-  box.innerHTML = '<b>Бан російських виконавців</b><div id="br-st" style="margin:8px 0;color:#b3b3b3"></div><div style="height:6px;background:#333;border-radius:3px;overflow:hidden"><div id="br-bar" style="height:100%;width:0;background:#1db954"></div></div><button id="br-stop" style="margin-top:10px;padding:6px 14px;border:0;border-radius:16px;background:#fff;color:#000;font-weight:700;cursor:pointer">Зупинити</button>';
+  box.innerHTML = '<b>Бан російських виконавців</b><div id="br-st" style="margin:8px 0;color:#b3b3b3">Запуск...</div><div style="height:6px;background:#333;border-radius:3px;overflow:hidden"><div id="br-bar" style="height:100%;width:0;background:#1db954"></div></div><button id="br-stop" style="margin-top:10px;padding:6px 14px;border:0;border-radius:16px;background:#fff;color:#000;font-weight:700;cursor:pointer">Зупинити</button>';
   document.body.appendChild(box);
   const st = box.querySelector('#br-st');
   const bar = box.querySelector('#br-bar');
   const stopBtn = box.querySelector('#br-stop');
   let stop = false;
-  stopBtn.onclick = () => { if (stop || stopBtn.dataset.done) { box.remove(); window.__banRuRunning = false; } stop = true; stopBtn.textContent = 'Зупиняю...'; };
+  let done = false;
+  stopBtn.onclick = () => { if (done) { box.remove(); window.__banRuRunning = false; return; } stop = true; stopBtn.textContent = 'Зупиняю...'; };
 
+  // ---------- fast path: direct API call, same as Spotify's own "Don't play this artist" button ----------
+  const WRITE_URL = 'https://spclient.wg.spotify.com/collection/v2/write?market=from_token';
+  const FAST_CHUNK = 50;
+
+  const getToken = async () => {
+    const r = await fetch('https://open.spotify.com/get_access_token?reason=transport&productType=web_player', { credentials: 'include' });
+    if (!r.ok) throw new Error('token HTTP ' + r.status);
+    return (await r.json()).accessToken;
+  };
+
+  const getUsername = async (token) => {
+    const r = await fetch('https://api.spotify.com/v1/me', { headers: { Authorization: 'Bearer ' + token } });
+    if (!r.ok) throw new Error('me HTTP ' + r.status);
+    return (await r.json()).id;
+  };
+
+  const guessClientToken = () => {
+    for (const k of ['client-token', 'clientToken']) {
+      try {
+        const v = localStorage.getItem(k);
+        if (!v) continue;
+        try { const j = JSON.parse(v); if (j && j.token) return j.token; } catch (e) {}
+        return v;
+      } catch (e) {}
+    }
+    return null;
+  };
+
+  const fastBanChunk = async (ids, token, username) => {
+    const headers = { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' };
+    const ct = guessClientToken();
+    if (ct) headers['client-token'] = ct;
+    let r;
+    try {
+      r = await fetch(WRITE_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ username, set: 'artistban', items: ids.map((id) => ({ uri: 'spotify:artist:' + id })) })
+      });
+    } catch (e) { return false; }
+    return r.ok;
+  };
+
+  // ---------- slow path: drive the real UI (unchanged, proven fallback) ----------
   const BAN_RE = /не відтворювати|не воспроизводить|don.?t play|nicht abspielen|no reproducir|ne pas écouter|nie odtwarzaj/i;
   const UNBAN_RE = /^(відтворювати|воспроизводить|play (this|songs)|wiedergeben|reproducir|jouer|odtwarzaj)/i;
   const barOf = () => document.querySelector('[data-testid="action-bar-row"]');
@@ -43,7 +88,7 @@
     }, 12000);
   };
 
-  const ban = async (id) => {
+  const slowBan = async (id) => {
     const more = await go(id);
     if (!more) return 'missing';
     await wait(900);
@@ -60,18 +105,47 @@
     return ok ? 'banned' : 'failed';
   };
 
+  // ---------- run ----------
   const startPath = location.pathname + location.search;
-  const counts = { banned: 0, already: 0, missing: 0, failed: 0, skipped: 0 };
+  const todo = IDS.filter((id) => store[id] !== 'banned' && store[id] !== 'already');
+  const counts = { banned: 0, already: IDS.length - todo.length, missing: 0, failed: 0 };
+
+  let token = null;
+  let username = null;
+  try {
+    token = await getToken();
+    username = await getUsername(token);
+  } catch (e) { token = null; }
+
+  const slowQueue = [];
+  if (token && username) {
+    for (let i = 0; i < todo.length; i += FAST_CHUNK) {
+      if (stop) break;
+      const chunk = todo.slice(i, i + FAST_CHUNK);
+      bar.style.width = Math.round((Math.min(i + FAST_CHUNK, todo.length) / todo.length) * 50) + '%';
+      st.textContent = 'Швидкий бан: ' + Math.min(i + FAST_CHUNK, todo.length) + ' з ' + todo.length + '...';
+      const ok = await fastBanChunk(chunk, token, username);
+      if (ok) {
+        chunk.forEach((id) => { store[id] = 'banned'; counts.banned++; });
+        save();
+      } else {
+        slowQueue.push(...chunk);
+      }
+      await wait(300);
+    }
+  } else {
+    slowQueue.push(...todo);
+  }
+
   let n = 0;
-  for (const id of IDS) {
+  for (const id of slowQueue) {
     if (stop) break;
     n++;
-    bar.style.width = Math.round((n / IDS.length) * 100) + '%';
-    if (store[id] === 'banned' || store[id] === 'already') { counts.skipped++; continue; }
-    const left = IDS.length - n;
-    st.textContent = 'Артист ' + n + ' з ' + IDS.length + '. Лишилось приблизно ' + Math.ceil(left * 4 / 60) + ' хв. Вкладку не закривай.';
+    bar.style.width = (50 + Math.round((n / slowQueue.length) * 50)) + '%';
+    const left = slowQueue.length - n;
+    st.textContent = 'Резервний спосіб (' + n + ' з ' + slowQueue.length + '). Лишилось приблизно ' + Math.ceil(left * 4 / 60) + ' хв. Вкладку не закривай.';
     let r;
-    try { r = await ban(id); } catch (e) { r = 'failed'; }
+    try { r = await slowBan(id); } catch (e) { r = 'failed'; }
     counts[r]++;
     if (r === 'banned' || r === 'already') { store[id] = r; save(); }
     await wait(500 + Math.random() * 500);
@@ -79,10 +153,9 @@
 
   history.pushState({}, '', startPath);
   window.dispatchEvent(new PopStateEvent('popstate', { state: {} }));
-  st.innerHTML = (stop ? 'Зупинено. ' : 'Готово! ') + 'Заблоковано нових: <b>' + counts.banned + '</b>, вже були: ' + counts.already + ', пропущено: ' + counts.skipped + (counts.missing + counts.failed ? ', не вдалось: ' + (counts.missing + counts.failed) : '') + '.';
+  bar.style.width = '100%';
+  st.innerHTML = (stop ? 'Зупинено. ' : 'Готово! ') + 'Заблоковано: <b>' + counts.banned + '</b>, вже були: ' + counts.already + (counts.missing + counts.failed ? ', не вдалось: ' + (counts.missing + counts.failed) : '') + '.';
   stopBtn.textContent = 'Закрити';
-  stopBtn.dataset.done = '1';
-  stop = false;
-  stopBtn.onclick = () => { box.remove(); window.__banRuRunning = false; };
+  done = true;
   window.__banRuResult = counts;
 })();
