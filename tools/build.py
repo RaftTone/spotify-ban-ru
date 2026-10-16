@@ -40,7 +40,13 @@ def read_list(path):
 def main():
     block, e1 = read_list(ROOT / 'lists' / 'blocklist.txt')
     allow, e2 = read_list(ROOT / 'lists' / 'allowlist.txt')
-    errors = e1 + e2
+    foreign, e3 = read_list(ROOT / 'lists' / 'foreign.txt')
+    errors = e1 + e2 + e3
+    for sid in foreign:
+        if sid in block:
+            errors.append('%s є і в blocklist, і в foreign (%s); лишіть в одному' % (sid, foreign[sid]))
+        if sid in allow:
+            errors.append('%s є і в foreign, і в allowlist (%s); приберіть з foreign' % (sid, foreign[sid]))
     for sid in allow:
         if sid in block:
             errors.append('%s є і в blocklist, і в allowlist (%s); приберіть з blocklist' % (sid, allow[sid]))
@@ -48,20 +54,27 @@ def main():
         print('\n'.join(errors))
         sys.exit(1)
     ids = list(block)
-    print('OK: %d у blocklist, %d у allowlist' % (len(ids), len(allow)))
+    print('OK: %d у blocklist, %d у foreign, %d у allowlist' % (len(ids), len(foreign), len(allow)))
     if '--check' in sys.argv:
         return
 
     src = (ROOT / 'src' / 'ban.js').read_text(encoding='utf-8')
     src = src.replace('/*COMMON*/', (ROOT / 'src' / 'common.js').read_text(encoding='utf-8'))
     src = src.replace("/*IDS*/''", "'" + ''.join(ids) + "'")
+    src = src.replace("/*IDS_EXTRA*/''", "'" + ''.join(foreign) + "'")
     out = ROOT / 'site'
     (out / 'ban.js').write_text(src, encoding='utf-8')
     bookmarklet = 'javascript:' + urllib.parse.quote(src, safe="()!*'~")
     cfg = json.loads((ROOT / 'config.json').read_text(encoding='utf-8')) if (ROOT / 'config.json').exists() else {}
     submit_url = cfg.get('submit_url', '')
     page = (out / 'index.template.html').read_text(encoding='utf-8')
-    page = (page.replace('{{COUNT}}', str(len(ids)))
+    extra_note = extra_faq = ''
+    if foreign:
+        extra_note = ('<p class="lead">Закладка спитає, кого банити: <b>лише російську музику</b> (%d) або ще й <b>закордонних артистів, які виступали в Росії після 24.02.2022</b> (+%d). Кожен запис у другому списку має дату виступу й посилання на джерело.</p>' % (len(ids), len(foreign)))
+        extra_faq = '<p><b>Чому окремий список закордонних?</b> Це артисти не з російської сцени, тому вони не входять у основний список. Кожен запис у <a href="lists/foreign.txt">lists/foreign.txt</a> має підтверджений виступ у Росії після 24.02.2022 (дата, місто, джерело). Банити їх чи ні, вирішуєш ти, коли натискаєш закладку.</p>'
+    page = page.replace('{{EXTRA_NOTE}}', extra_note).replace('{{EXTRA_FAQ}}', extra_faq)
+    page = (page.replace('{{COUNT_EXTRA}}', str(len(foreign)))
+                .replace('{{COUNT}}', str(len(ids)))
                 .replace('{{SUBMIT_URL}}', json.dumps(submit_url))
                 .replace('{{REPO}}', REPO_URL)
                 .replace('{{LOADER_RAW}}', LOADER.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))

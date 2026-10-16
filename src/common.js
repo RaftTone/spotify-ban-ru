@@ -20,6 +20,26 @@ const makeUI = (o) => {
   ui.st = box.querySelector('#br-st');
   ui.bar = box.querySelector('#br-bar');
   ui.btn = box.querySelector('#br-stop');
+  // Question with buttons instead of the progress bar. options = [{ value, label }]; resolves to value, or null on cancel.
+  ui.choose = (html, options) => new Promise((resolve) => {
+    ui.st.innerHTML = html;
+    ui.btn.style.display = 'none';
+    const row = document.createElement('div');
+    const done = (v) => { row.remove(); ui.btn.style.display = ''; ui.st.textContent = ''; resolve(v); };
+    options.forEach((opt, i) => {
+      const b = document.createElement('button');
+      b.textContent = opt.label;
+      b.style.cssText = 'display:block;width:100%;margin-top:8px;padding:8px 12px;border:0;border-radius:16px;font-weight:700;cursor:pointer;text-align:left;background:' + (i ? '#fff' : o.accent) + ';color:' + (i ? '#000' : '#fff');
+      b.onclick = () => done(opt.value);
+      row.appendChild(b);
+    });
+    const c = document.createElement('button');
+    c.textContent = 'Скасувати';
+    c.style.cssText = 'display:block;margin-top:8px;padding:4px 0;border:0;background:none;color:' + o.muted + ';cursor:pointer;text-decoration:underline';
+    c.onclick = () => { box.remove(); window[o.flag] = false; resolve(null); };
+    row.appendChild(c);
+    ui.st.after(row);
+  });
   ui.finish = (html) => { ui.st.innerHTML = html; ui.btn.textContent = 'Закрити'; ui.done = true; };
   ui.btn.onclick = () => {
     if (ui.done || ui.stop) { box.remove(); window[o.flag] = false; return; }

@@ -1,5 +1,7 @@
 (async () => {
-  const IDS = (/*IDS*/'').match(/.{22}/g) || [];
+  const IDS_CORE = (/*IDS*/'').match(/.{22}/g) || [];
+  const IDS_EXTRA = (/*IDS_EXTRA*/'').match(/.{22}/g) || []; // foreign artists who performed in Russia since 24.02.2022
+  let IDS = IDS_CORE;
   /*COMMON*/
   const log = (...a) => { try { console.log('[banRu]', ...a); } catch (e) {} };
 
@@ -19,6 +21,20 @@
     return;
   }
   const { store, save } = makeStore(KEY);
+
+  // Two lists: Russian music only, or also foreign artists who performed in Russia since Feb 2022.
+  // window.__banMode = 'ru' | 'all' skips the question.
+  if (IDS_EXTRA.length) {
+    let mode = window.__banMode;
+    if (mode !== 'ru' && mode !== 'all') {
+      mode = await ui.choose('Кого банимо?', [
+        { value: 'ru', label: 'Лише російську музику (' + IDS_CORE.length + ')' },
+        { value: 'all', label: '+ закордонних, що виступали в Росії з лютого 2022 (разом ' + (IDS_CORE.length + IDS_EXTRA.length) + ')' }
+      ]);
+    }
+    if (!mode) return;
+    if (mode === 'all') IDS = IDS_CORE.concat(IDS_EXTRA);
+  }
 
   // ---------- auth: borrow the page's own Authorization + client-token ----------
   // Spotify's token endpoints are bot-protected, so instead of minting a token we watch the
