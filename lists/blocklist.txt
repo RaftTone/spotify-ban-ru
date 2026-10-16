@@ -2350,3 +2350,282 @@
 748JmbGckfBveUUS6C4sSC # Валерий Меладзе | рішення автора
 3R1s7ru91QkN2uPJ8Uc9fU # Брутто | рішення автора
 2KyhSu3TgxIGLcuLRHtvOA # MORGENSHTERN (другий профіль) | рішення автора
+# --- Нові: хвилі 4-6 (16.10), докази в research/ ---
+4iv20UzqQRHYRryISw85Io # 40 градусов | RU, MusicBrainz/Wikidata, wave4
+3OoPp8Bp2AYXhf4joMVfN5 # 5 Плюх | RU, MusicBrainz/Wikidata, wave4
+4jPeQqCuenzUjbAofi8IA2 # A!KSLET | RU, MusicBrainz/Wikidata, wave4
+10re9rOgWaOQ3IQ5j0dotz # A-Sen | RU, MusicBrainz/Wikidata, wave4
+4PFqXzcfDcWm1eeVAN7SEK # Affected Gaze | RU, MusicBrainz/Wikidata, wave4
+6mqj8PdmdrCQujdQYwqNA5 # Aleksey Goman | RU, MusicBrainz/Wikidata, wave4
+3KW4FoYGtukfoyZK8ifDex # ALEX&RUS | RU, MusicBrainz/Wikidata, wave4
+0zvzJpyPKzonsarq35T3SY # Anfisa Agueeva | RU, MusicBrainz/Wikidata, wave4
+6csV0RGC6DEjiQJZNVkkce # Anfisa Agueva | RU, MusicBrainz/Wikidata, wave4
+2QE240w2BzSaOcx8NqjiRi # Anonymous Ember | RU, MusicBrainz/Wikidata, wave4
+0qNnR74QNNw7RlUk0Grzsb # Aquascape | RU, MusicBrainz/Wikidata, wave4
+11swwiWTdjmuV6SLoSEMGy # Arcanorum Astrum | RU, MusicBrainz/Wikidata, wave4
+70zGgXTV6Oufy8hoWL1boh # Argemonia | RU, MusicBrainz/Wikidata, wave4
+7DHIrsqt5LWdoDbNg4Ix9G # Argument 5.45 | RU, MusicBrainz/Wikidata, wave4
+6i68UFzJEMhBExoMpddMRe # August | RU, MusicBrainz/Wikidata, wave4
+605j1NJKSIpMFBp9VEEqjt # B.T.R | RU, MusicBrainz/Wikidata, wave4
+5Ne8ooH9vj3EA6NJKtHFxh # BAPEZAYKA | RU, MusicBrainz/Wikidata, wave4
+41PMzOHxLouUOCafw19GvE # Baradj | RU, MusicBrainz/Wikidata, wave4
+3706WlUVYDI0X2gfPjR96V # Blockkid | RU, MusicBrainz/Wikidata, wave4
+336Wjd13t9EZBmBtSGG2DC # Burito | RU, MusicBrainz/Wikidata, wave4
+2oKBskh61ZWZX1FrCzP4Xh # BUZSQUEZ | RU, MusicBrainz/Wikidata, wave4
+2hzLykAesbKyaI5WhARQYd # BYOR | RU, MusicBrainz/Wikidata, wave4
+0Upxnyh9nIUNSOmNE8WF4R # BYOR | RU, MusicBrainz/Wikidata, wave4
+46XpZQLjjp5NodCFao1bOf # Changes | RU, MusicBrainz/Wikidata, wave4
+2OtP8GqmbGjYHumKfumM4N # Chester Nebro | RU, MusicBrainz/Wikidata, wave4
+6oPrFqJ0nhq67xS49Co61B # Cloower Wooma | RU, MusicBrainz/Wikidata, wave4
+7GXfFGSIOhIVggYC3qN8Sw # clout | RU, MusicBrainz/Wikidata, wave4
+63malI7Jhok8ZoSX6ARuYj # Cosmocats | RU, MusicBrainz/Wikidata, wave4
+7eLRS530dAw8FQJzuG6SBo # CTRL A | RU, MusicBrainz/Wikidata, wave4
+4laOdFXD7P5gNDCSTX24Ag # DAASHA | RU, MusicBrainz/Wikidata, wave4
+6cYFsHThnKLm8WNrSGNNKg # Daniil Skotnikov | RU, MusicBrainz/Wikidata, wave4
+7lWeQXC5Y8S7FBi9k2eGFv # David | RU, MusicBrainz/Wikidata, wave4
+4vvwNGaK5htxyH3MpHi2i2 # DEKADANCE | RU, MusicBrainz/Wikidata, wave4
+3KOw4AvgNJzsxl9BnE9clW # DenPelm | RU, MusicBrainz/Wikidata, wave4
+1f2jOpxUrI8tiQSotUv5uT # Deviant Syndrome | RU, MusicBrainz/Wikidata, wave4
+30qwm8zfG7tWI8RI4OUuG5 # Diggadgy | RU, MusicBrainz/Wikidata, wave4
+4qWyJeHY2g0G7utRLby2kR # Digimortal | RU, MusicBrainz/Wikidata, wave4
+7iB0LLgDDpnrGPV8nFr0Bu # Dmitriy Pryanov | RU, MusicBrainz/Wikidata, wave4
+76EMpN23ij3oYTGme3HnNn # Dmitry Hahalin | RU, MusicBrainz/Wikidata, wave4
+3rgy5TCmpKGrxnvgb6WMI5 # Dmitry Ishkhanov | RU, MusicBrainz/Wikidata, wave4
+6byzAHzd6pvHZb0nyWR59d # Dogewell | RU, MusicBrainz/Wikidata, wave4
+4ZVUy0u4JnNGj6jNNWv6Qx # DVRKHOLD | RU, MusicBrainz/Wikidata, wave4
+1uFT2PBrykxOwlu0I4RNY2 # Dzambolat Dulaev | RU, MusicBrainz/Wikidata, wave4
+0PFlaA9VxMfyD7LEw2Ynyj # Eimic | RU, MusicBrainz/Wikidata, wave4
+4H8TM5IPGmqhys8d8wln8S # Eiriel | RU, MusicBrainz/Wikidata, wave4
+5HPIxEuaV8LOm7Iqxy8xJu # Eiriley | RU, MusicBrainz/Wikidata, wave4
+3Ppw3oP5nRqYhoGRDvhuUr # ELLA | RU, MusicBrainz/Wikidata, wave4
+2Ty8adhwXGFtqXZdBL6bS9 # Estintax | RU, MusicBrainz/Wikidata, wave4
+4yCfK0P5MDOVkE7QrukJRC # etoneksushenka | RU, MusicBrainz/Wikidata, wave4
+56VGoHwv3GbZOqvOKBnWzp # Everlasting | RU, MusicBrainz/Wikidata, wave4
+79Jq60fcsylNu79SB8ZcW8 # Everything is made in China | RU, MusicBrainz/Wikidata, wave4
+79pkz4kQTE5mLWss4U0ozi # FEEL | RU, MusicBrainz/Wikidata, wave4
+3XgQiERzlGzUe286O2jo7I # Fløa | RU, MusicBrainz/Wikidata, wave4
+7BvLgunXTcIAkE1uWNbbwQ # Free Flow Flava | RU, MusicBrainz/Wikidata, wave4
+2qknkPLvziV5x1u4xw7H1C # Gala Chistiakova | RU, MusicBrainz/Wikidata, wave4
+4CCOwj0YLS9alXqVbP5yZU # goth girl | RU, MusicBrainz/Wikidata, wave4
+57QsdaQhaRhRruISmg7W2G # GREEN ORXNGE | RU, MusicBrainz/Wikidata, wave4
+7wVN39igtF4xS8hwSV4CJA # Hammerforce | RU, MusicBrainz/Wikidata, wave4
+2o8gLcevwZSQZkUuD8gsvH # HEADLINK | RU, MusicBrainz/Wikidata, wave4
+2FhWiKnwuqfWvUjYlJty6Y # ICE | RU, MusicBrainz/Wikidata, wave4
+0OfiNuvdDEr3zKgSyUvla1 # Imperia | RU, MusicBrainz/Wikidata, wave4
+4cP8dajiysm6ctG8gLfbEd # Imperia | RU, MusicBrainz/Wikidata, wave4
+5K9dp3qwBXndqGG8LuxqIn # In2Nation | RU, MusicBrainz/Wikidata, wave4
+40n2PAXvtVy3s94HSWOol5 # Jah-Far | RU, MusicBrainz/Wikidata, wave4
+7bNLPhcWZzrhgEdgTkk4n9 # JDFLAG | RU, MusicBrainz/Wikidata, wave4
+2j7GDmfEcO2YNZwlqN2dxX # jealous | RU, MusicBrainz/Wikidata, wave4
+72ilIeXCxhhz5xOdn5smR7 # Jet Packs | RU, MusicBrainz/Wikidata, wave4
+3wuvTMnvPLelhkltlwYFlI # JEW3SS | RU, MusicBrainz/Wikidata, wave4
+0j4z7kUnuRChYom1rytlQY # Kali | RU, MusicBrainz/Wikidata, wave4
+48a2e8TUdBxupMQR6f0GTI # Kharmaguess | RU, MusicBrainz/Wikidata, wave4
+2yg8MBACjWOTWOOaeymU8Q # Kirill Moyton | RU, MusicBrainz/Wikidata, wave4
+1rcYZdCzi3poheNNvupX7K # Kito Jempere | RU, MusicBrainz/Wikidata, wave4
+5iF3nNoHv3gEm9mobCwdxC # Lead Horizon | RU, MusicBrainz/Wikidata, wave4
+7qINIyoYq4dwDcMSPgx4gP # LITHIUM | RU, MusicBrainz/Wikidata, wave4
+2JsQrIHU3kp7DPCyjh8Pyd # LIXI. | RU, MusicBrainz/Wikidata, wave4
+44PzGo9Hd4z0IM9m3SKiER # Lonelium | RU, MusicBrainz/Wikidata, wave4
+74m7Uqm7SLxJaH7Qny3FUU # lowlife | RU, MusicBrainz/Wikidata, wave4
+2VgGNXU30s7x4MVWJXfFyZ # Lunae Ortus | RU, MusicBrainz/Wikidata, wave4
+4dqbddPspYBgHu1JlIXHL2 # M-XVI | RU, MusicBrainz/Wikidata, wave4
+3jrsnuJGzxrUmWQu2D9JWj # M.E.O.W | RU, MusicBrainz/Wikidata, wave4
+4BwzT8cCxiqsCrrPL1XaWy # Mahaon | RU, MusicBrainz/Wikidata, wave4
+1Tvfj8jTVt5s22Xz4nbc4G # Marimba Plus | RU, MusicBrainz/Wikidata, wave4
+0na3epFXcuFapstetiYS6Q # Marselle | RU, MusicBrainz/Wikidata, wave4
+4Ry7MUFM2VjIVYqb9Tb5dk # MC Кальмар | RU, MusicBrainz/Wikidata, wave4
+7mbxLqmq3M3kyDbP7q7Vbf # mellyday | RU, MusicBrainz/Wikidata, wave4
+6GwdcHfQupu2L3cXAj0gyO # Mervent | RU, MusicBrainz/Wikidata, wave4
+3rX5vJSZGXOfdq1TrUkZDZ # Miami Scissors | RU, MusicBrainz/Wikidata, wave4
+3BJ7yel7RiAKFWmvoeQ2bL # MIIDAS | RU, MusicBrainz/Wikidata, wave4
+0TEk5YKBk6kZSQVVsMBs0j # MURKYVICE | RU, MusicBrainz/Wikidata, wave4
+6vC2ciYJkoJeP23L3yNEFv # MusicBySergius | RU, MusicBrainz/Wikidata, wave4
+40XllahYqSgw5j3ZaNlJmK # My Autumn | RU, MusicBrainz/Wikidata, wave4
+35BZTN0AghGfZcIwNPeO2s # Namadzu | RU, MusicBrainz/Wikidata, wave4
+0j5kVHxvTgUN4nBIPKCLRJ # Never Get Used To People | RU, MusicBrainz/Wikidata, wave4
+4D8TlW7uncjWx9LMKOlg94 # Nikita | RU, MusicBrainz/Wikidata, wave4
+4h64wiJVXxs0rAOcxa25xp # Okolo Poludnya | RU, MusicBrainz/Wikidata, wave4
+3M3PdJZlxaY2RLuF7Vl4mM # Optimystica Orchestra | RU, MusicBrainz/Wikidata, wave4
+4Gh5h5r2XzRKsVSSI56XcH # Opus | RU, MusicBrainz/Wikidata, wave4
+1rteuSzE6t6KBdV77uS3ba # Otrix | RU, MusicBrainz/Wikidata, wave4
+1vYEwSktck4KOGXUWKpLpt # Pashtetue | RU, MusicBrainz/Wikidata, wave4
+3dkKwi4HizAcVIDHlZP7zI # Plastika | RU, MusicBrainz/Wikidata, wave4
+0OQ1ShLuM2HFheFFvhuCFd # polarrana | RU, MusicBrainz/Wikidata, wave4
+0U9lg91osOJogFALz9Pgab # Polina Bogusevich | RU, MusicBrainz/Wikidata, wave4
+2Nf86RmeWiADBoEl9zeEoa # Popular Mechanics (Sergei Kuriokhin) | RU, MusicBrainz/Wikidata, wave4
+3hBWcai5p0tR0LsSs5wCQ8 # Proyekt Uvechye | RU, MusicBrainz/Wikidata, wave4
+2fg5JOz2dbSdlgAeUVhj8J # PURPPB3RRY | RU, MusicBrainz/Wikidata, wave4
+2rxQo3SAT3WGvjcv7nlk43 # péttysnpy | RU, MusicBrainz/Wikidata, wave4
+1hjJ4bsbNMmbIih3d9Pq1H # Quok | RU, MusicBrainz/Wikidata, wave4
+1OhJuJ3Hvz99XL6hBGmv6e # R.A.SVET | RU, MusicBrainz/Wikidata, wave4
+5rb1U6Z2vCCsq5FdnUS00H # Requiem4FM | RU, MusicBrainz/Wikidata, wave4
+0oXuVydHQsJ9rnfYJxYmQv # Reward for a Dead Man | RU, MusicBrainz/Wikidata, wave4
+4UblcDBSVyujGGAtc8UBH5 # Roz Vitalis | RU, MusicBrainz/Wikidata, wave4
+0q2nt9JxdGR4M9bvE5xEuo # SAHALIN | RU, MusicBrainz/Wikidata, wave4
+29cH9uiMH3f6r7EsbPgjsH # SARCOFUCK | RU, MusicBrainz/Wikidata, wave4
+2bkkxVJX8hPCb6uwGSL6g4 # seimoro | RU, MusicBrainz/Wikidata, wave4
+3CqTffJbelFwLtUiCaUNNW # SELLOUT | RU, MusicBrainz/Wikidata, wave4
+41ZhnBiaqeoe6asIzVDvqP # Serge Devant | RU, MusicBrainz/Wikidata, wave4
+66nyJoCDzy732FFAnfBVhX # Sergey Kuryokhin | RU, MusicBrainz/Wikidata, wave4
+06SHwlal2NOc5cwYVL2DBb # Sergey Voytenko | RU, MusicBrainz/Wikidata, wave4
+4Ft4dgkrt2jvsYIOm4H71z # Sergey Zhukov | RU, MusicBrainz/Wikidata, wave4
+04nJz4WIxpLyPrUVjSNySA # SHALA | RU, MusicBrainz/Wikidata, wave4
+4hk6wco2crobUnLLU2mZsS # Sintetika | RU, MusicBrainz/Wikidata, wave4
+6ORJGSfnPFkJFFs5wXEClO # skyfall beats | RU, MusicBrainz/Wikidata, wave4
+6WH7pGS92svtHEKd0ipK1g # Sound Shocking | RU, MusicBrainz/Wikidata, wave4
+1LP8kdjz6NUjAiA4lGMgJF # SPVRROW | RU, MusicBrainz/Wikidata, wave4
+7hLrjiuNxZIf9JSPz2CbAo # Stendahl | RU, MusicBrainz/Wikidata, wave4
+6fFEvjKWPXFJ40GT6i9Vjr # STOMER | RU, MusicBrainz/Wikidata, wave4
+44LuFxpF0elYB9vCad6BGp # Stomer | RU, MusicBrainz/Wikidata, wave4
+3GkC1Jw90RXHnBGQuT8GwV # Tahdem Foundation | RU, MusicBrainz/Wikidata, wave4
+3SrVxOkAjxBl6tkSUHHimY # Takai The Maid | RU, MusicBrainz/Wikidata, wave4
+3iQOXyQ8ofxrbd1SBpMt6A # Tape LaFlare | RU, MusicBrainz/Wikidata, wave4
+2yRDg9eD2z1c62WQW1oz6D # Tatyana Kalmykova | RU, MusicBrainz/Wikidata, wave4
+1WJjED2czBQ1vy9KYdh62P # Tenkorr | RU, MusicBrainz/Wikidata, wave4
+2HFt7yp3Z7hXoCY5LA6F55 # The Art | RU, MusicBrainz/Wikidata, wave4
+6jzLpU7NsMKYq7FPcEgTg2 # The Bottans | RU, MusicBrainz/Wikidata, wave4
+6xS8X9YsCwo006f5BPWX30 # too much | RU, MusicBrainz/Wikidata, wave4
+3R5XaioCtKHNhZC6Ocsgtt # too much | RU, MusicBrainz/Wikidata, wave4
+6UE5IrCrC5xeuuY0gzrvVf # Truffele | RU, MusicBrainz/Wikidata, wave4
+0iZFq1JE8IgKlBJvepdLU5 # Type V Blood | RU, MusicBrainz/Wikidata, wave4
+3JD3XNWfrxOKVHbAApYHox # UROBOROS | RU, MusicBrainz/Wikidata, wave4
+3KSeLzGuDGskhQkfQ0xxj4 # Vena Portae | RU, MusicBrainz/Wikidata, wave4
+6Du9Mwz582MFBxXad1IfNA # VERNAM | RU, MusicBrainz/Wikidata, wave4
+5gQXdVmzGuWYNiG1ZOFS7S # Wels | RU, MusicBrainz/Wikidata, wave4
+6ititBR565skfqx11WaIZF # WHYSTI | RU, MusicBrainz/Wikidata, wave4
+3gzZotbG6eG4mVSjc5NH1j # Wine from Tears | RU, MusicBrainz/Wikidata, wave4
+20WBZ6CFiwWwW3qHcJ95RC # XE-NONE | RU, MusicBrainz/Wikidata, wave4
+4NYO6Wke9dW9bgknNIEBKV # ximora | RU, MusicBrainz/Wikidata, wave4
+4O1BpPjKtbmon4QJDaYFGM # Yancle | RU, MusicBrainz/Wikidata, wave4
+1PrYLnKCkBQeaYUSEJqlTZ # YOGAS | RU, MusicBrainz/Wikidata, wave4
+4fzqeOdECi9BzAHBiE4gTW # Zero People | RU, MusicBrainz/Wikidata, wave4
+6NxvUi0HFyft16vYViX9T2 # Znaki | RU, MusicBrainz/Wikidata, wave4
+5FpRyd0rAEuzdlM6PzcUWn # Ада | RU, MusicBrainz/Wikidata, wave4
+2f4bud2oLugFvvHDv8PEsY # Алексей Страйк | RU, MusicBrainz/Wikidata, wave4
+1j1L5gX6jondMFFOMaCu29 # Алиса Вокс | RU, MusicBrainz/Wikidata, wave4
+5RaTWXQzmfCdXGs2Cvp2Ob # Аманит | RU, MusicBrainz/Wikidata, wave4
+4pALRydVVLZwHq49n3791G # Анна Пингина | RU, MusicBrainz/Wikidata, wave4
+49z0bkEdijXVUliUj6tFPT # анссвит | RU, MusicBrainz/Wikidata, wave4
+6deyMHkoSfQtGGCdyVBZti # Антон Лаврентьев | RU, MusicBrainz/Wikidata, wave4
+6uFa118DVPcBbNhEhLhhfs # БАЗАР | RU, MusicBrainz/Wikidata, wave4
+05h0WxtqjOX0isla7xVjVJ # Банда четырёх | RU, MusicBrainz/Wikidata, wave4
+6PvtFjaRjwFycwHR0WXbut # Белые Братья | RU, MusicBrainz/Wikidata, wave4
+1w6brFzPGqm5UHJowB9P8e # Беременный ТРамвайчик | RU, MusicBrainz/Wikidata, wave4
+4ZinEImYY0myYrZGSEW61a # Бесплатный Автобус | RU, MusicBrainz/Wikidata, wave4
+089OMnL1yQrqg5DHSh5Q9h # билборды | RU, MusicBrainz/Wikidata, wave4
+2NQH7Fbi2svBcb5hBn0x1C # Богдан Титомир | RU, MusicBrainz/Wikidata, wave4
+6tzYB4lJQznZpmSfdacYXn # Бюро | RU, MusicBrainz/Wikidata, wave4
+7fOoaMSyYyadyQvnx9SkSN # Валентин Дядька | RU, MusicBrainz/Wikidata, wave4
+5THjY7lEX7J4desxLRNfuM # Ваша Маруся | RU, MusicBrainz/Wikidata, wave4
+6DlAiIKziTtKle8oAsBmIe # Верум Пруно | RU, MusicBrainz/Wikidata, wave4
+5peYlTVov4XdU7kg4J3GJ3 # Ветер Воды | RU, MusicBrainz/Wikidata, wave4
+2gIvKaiOmzoU4EZDOCQtyr # Видеокассета Твоих Родителей | RU, MusicBrainz/Wikidata, wave4
+64JmHQnfhk66wssAFoUYYu # Виталя Джа | RU, MusicBrainz/Wikidata, wave4
+56Cbm5AKnMtuJ0MuyjqZzb # влад к. | RU, MusicBrainz/Wikidata, wave4
+7hLUJXG4GxrDplJJw0n5b0 # Владимир Захаров | RU, MusicBrainz/Wikidata, wave4
+2zVKwuK9CR0E0tSGeNONZ2 # Вольный Путь | RU, MusicBrainz/Wikidata, wave4
+1BQ0u3X1B7nvkHuwLoziNy # Глава II | RU, MusicBrainz/Wikidata, wave4
+2Dzk5pKLtjANkBO5PQTZBX # Гренада | RU, MusicBrainz/Wikidata, wave4
+1NRvZagUMUiAnovhyb7fZN # группа Гранды | RU, MusicBrainz/Wikidata, wave4
+2kxL9MSncPo6nPZD1iMJx0 # Группа Хали-Гали | RU, MusicBrainz/Wikidata, wave4
+0nHSWiI71sJ1IhaEmGyjYv # Давай | RU, MusicBrainz/Wikidata, wave4
+5oHuPnujAw9Yr58pHRhvfq # Дайте Два | RU, MusicBrainz/Wikidata, wave4
+2EV5vrvDtUKuw886V6ct3K # Дениза Хекилаева | RU, MusicBrainz/Wikidata, wave4
+5kbdKRFBwy2YWzGOY5Qg7C # ЕБАНЬКО | RU, MusicBrainz/Wikidata, wave4
+3X40ajmtYa3zxcClsV7Hzi # ЕэЛэФ | RU, MusicBrainz/Wikidata, wave4
+14CkRx0PmLmljyivHQaywW # Зэйнэп Фархетдинова | RU, MusicBrainz/Wikidata, wave4
+1LLfwGOShiUpUtFh0b9r22 # Карина Кокс | RU, MusicBrainz/Wikidata, wave4
+09NBR7FOCvIbMCMiZDOiqc # Кирилл Коперник | RU, MusicBrainz/Wikidata, wave4
+1XkpIB3oogCqj1VOZxsRGm # Кит | RU, MusicBrainz/Wikidata, wave4
+2guXSTBmh7xBFibgVJy7qY # Комонь | RU, MusicBrainz/Wikidata, wave4
+03oLwyNGINgVTF1QKxNUZD # Конец фильма | RU, MusicBrainz/Wikidata, wave4
+6xIA9weMJaUvc2xOqUx8fm # Константин Легостаев | RU, MusicBrainz/Wikidata, wave4
+3IJhjIFnI1B7qXJWnWhiCo # Кронос | RU, MusicBrainz/Wikidata, wave4
+2zI2d2jnB9wWH50rCJjHMR # Лакмус | RU, MusicBrainz/Wikidata, wave4
+4M3UeT4EgTT5yn2TLjdQoD # Лиза Громова | RU, MusicBrainz/Wikidata, wave4
+1CwZuD2FTtEGKBIKYyuBPZ # Лицей | RU, MusicBrainz/Wikidata, wave4
+3YKzyuBK0TbNGkVrozA0aC # ЛУЧ | RU, MusicBrainz/Wikidata, wave4
+3hPVV0CCcQkI8nxvVPFbtz # Людмил Огурченко | RU, MusicBrainz/Wikidata, wave4
+2WRWppgZONQIMMqFVQDQjP # Макс Лоренс | RU, MusicBrainz/Wikidata, wave4
+43ecyuGc6LR1MUKcEt4ppS # Маленький ярче | RU, MusicBrainz/Wikidata, wave4
+2ppmzLdHj82EnmGWVdSfte # Мария Зайцева | RU, MusicBrainz/Wikidata, wave4
+4Yizj0y5uuAilped9X6MOi # Мария-Режина | RU, MusicBrainz/Wikidata, wave4
+6SpzP1Wg2WLdT0OLXd4xxB # МодеМ | RU, MusicBrainz/Wikidata, wave4
+1zg83rawknLXlnRi66QDHy # мс улыбочка | RU, MusicBrainz/Wikidata, wave4
+0K20eX8YMj8RQ63SCdHPM7 # МУСОР | RU, MusicBrainz/Wikidata, wave4
+18KuArJyGtj7nPuxwtDtO8 # мытищи в огне | RU, MusicBrainz/Wikidata, wave4
+5AG2Qu7zLNprfniI3PLv7M # Наследие Вагантов | RU, MusicBrainz/Wikidata, wave4
+3SURMIUHYRHJ2yeFAXWTW6 # Несогласие | RU, MusicBrainz/Wikidata, wave4
+40ZfG9ERpSB6sprvxkKsmw # Паранойя и ангедония | RU, MusicBrainz/Wikidata, wave4
+7d4vXFWg1NJDbux9a2wAdV # Пацаны | RU, MusicBrainz/Wikidata, wave4
+0LWBk9m1uSOSVAVujOETQR # плакин М. | RU, MusicBrainz/Wikidata, wave4
+3eT3a6cRzhnAFZkRMeLoi6 # Плакса | RU, MusicBrainz/Wikidata, wave4
+5D4KhPLXN5auMMJ0jy2N1A # почтисчастье | RU, MusicBrainz/Wikidata, wave4
+0qUNbNZriu7GjKlQaKgYIj # Птаха | RU, MusicBrainz/Wikidata, wave4
+5h9QKJm0pDErGRPLERWyBW # Райтер | RU, MusicBrainz/Wikidata, wave4
+38ToFCP3mSgpBH7OQRzyfx # РарогЪ | RU, MusicBrainz/Wikidata, wave4
+4OcyPhRhlV631WDKvePqtr # Ришелье | RU, MusicBrainz/Wikidata, wave4
+3uIT0tjHWGPLUTLGVxGdQb # Родион Газманов | RU, MusicBrainz/Wikidata, wave4
+6T6cfngJMz5avEIe4KSaOY # РОДНАЯ РЕЧЬ | RU, MusicBrainz/Wikidata, wave4
+0G0n1zWfp2CIEJyfmXt1hp # СахарСоСтеклом | RU, MusicBrainz/Wikidata, wave4
+60IlJ69BWwTrHx0VS5jXhI # Светлана Назаренко | RU, MusicBrainz/Wikidata, wave4
+4mcNYpi4WCxYkmsOECKWEg # Сколот | RU, MusicBrainz/Wikidata, wave4
+0K0MqnpgtUeK0to3eE7Pny # Сколот | RU, MusicBrainz/Wikidata, wave4
+24rbXRS84RpMIP8eFcWNDt # Сладкий Сон и Сергей Васюта | RU, MusicBrainz/Wikidata, wave4
+6imqyhMJ52Zl9wCKEaq3X4 # Старый приятель | RU, MusicBrainz/Wikidata, wave4
+0MpaEVFOR3mmA2UQEI3SkF # СТРИО | RU, MusicBrainz/Wikidata, wave4
+4K3Lntyj56gKzXn1IerE8T # Танисия | RU, MusicBrainz/Wikidata, wave4
+5QWaP417yfsGCkgwS0TzH4 # ТКАНИ | RU, MusicBrainz/Wikidata, wave4
+0y2E5yF4bqo96GAEsk0frq # Убийцы Crystal | RU, MusicBrainz/Wikidata, wave4
+5GAiAqdjnqdRFSsHxMw4nx # Чёрный Государь | RU, MusicBrainz/Wikidata, wave4
+6La3fCUI9DbWN2JniQK36J # Шляпа Шаляпина | RU, MusicBrainz/Wikidata, wave4
+6cA6bv5d77XwHKP6NMbEAa # Шляпа Шаляпина | RU, MusicBrainz/Wikidata, wave4
+4xX8yUUGjBaax1NCXUD49w # Шляпа Шаляпина | RU, MusicBrainz/Wikidata, wave4
+4izrO0NDuUwNm5LTPxi34l # Шым | RU, MusicBrainz/Wikidata, wave4
+4YWDLNzoPHqfOtU7V7Oxpd # ъэхо двора | RU, MusicBrainz/Wikidata, wave4
+1IqCNmHAzklxAiVJ9w4lal # Ягода | RU, MusicBrainz/Wikidata, wave4
+7HA0ugv17UN7Zi56nfaKay # Женя Белоусов | RU, MusicBrainz/Wikidata, wave4
+4slLzPXFqpBOj6rc4tHFEl # DJ Кефир | RU, електронна музика, wave5
+4zNhfG6i4QlfUuzt1hBGu2 # Alexander Popov | RU, електронна музика, wave5
+6SRhgEtm2KUI7cK7oNDVdS # Ivan Roudyk | RU, електронна музика, wave5
+4G2SyYMh9rbSyhEhvx9Rdz # Yuri Kane | RU, електронна музика, wave5
+7mOcnsPxPzBJO5ne99Shx2 # DJ Nil | RU, електронна музика, wave5
+4PgqgYFlhYp9WWZbGeolq5 # Survied | RU, електронна музика, wave5
+2phDqQgXrVUO2aAwBekgoS # vecher 1998 | RU, електронна музика, wave5
+4K3qvAlflEcPJEGsRZXtci # Absurd | RU, електронна музика, wave5
+0mJ05r4CQi2RA8V2i4hufS # Alpha-Beta | RU, електронна музика, wave5
+7bRzS7hQZBeqOBJzXy92MH # Eclier | RU, електронна музика, wave5
+0Aqozc8QLnnxyiAtKnX2JI # Cucumbers | RU, електронна музика, wave5
+3vJ7dBKkQKC5wMxPBWboGJ # Ootkeen | RU, електронна музика, wave5
+3xwhtbhj8voDQGdIuGpwhS # Santai | RU, електронна музика, wave5
+1RyMhVobz3bSEd0EWZ1wXE # Popescu | RU, електронна музика, wave5
+0MpLB95CWqk4AjCDaYWZyX # Something Else | RU, електронна музика, wave5
+6B9t7xxSOoNZv0ldiKLQiw # Kynara | RU, електронна музика, wave5
+5lvp4OIWg6jOnrW4Ud0ZnZ # Diskette | RU, електронна музика, wave5
+5IdyZix2HjYLOb1fvN7oaH # Valique | RU, електронна музика, wave5
+73dJn5aAGRWp5Sbbk2WMJx # Ruksby | RU, електронна музика, wave5
+3miMw6MEY57EaWv4Ezs192 # Hyper Eyes | RU, електронна музика, wave5
+4GeYCBlQEQRv0hamH4uroj # In Progress | RU, електронна музика, wave5
+4OPkW7FjRZwo3mwiUMVu4I # Sam Alien | RU, електронна музика, wave5
+1ITZUUn9d8Zy3yANrY0WhT # Magic Look | RU, електронна музика, wave5
+6Uabxqwzp8MZPLDSQwOpje # Cripplingg | RU, електронна музика, wave5
+4JpPwngxwUNivKb2prrhNA # Killaheadz | RU, електронна музика, wave5
+4TlYAADARIi9iyxq3PGtSM # Nowsense | RU, електронна музика, wave5
+3Af4YUPQn1vAHSGpQoVVUC # NONSENSÉ | RU, електронна музика, wave5
+7hZtHuPvCcMdefm3kv0Y9V # NONSENSÉ | RU, електронна музика, wave5
+3g16mM1Juujw8qGNVe4q6u # Снежный Июль | RU, електронна музика, wave5
+2VNjT0s8FW2MvcGDYGcqmr # Encode | RU, електронна музика, wave5
+6QUaYAjVUoA9ADAHubQucV # DJ Smash | RU, електронна музика, wave5
+4eDlu6aDv9yoDZrQIMA4Ws # Ларин | колаб з MORGENSHTERN
+4NvyMyuZiybVuRozto9qyd # Мот | колаб з Timati
+4WBHI5itiQ6XUyjpZOo27t # Nel | колаб з Timati
+3loDKhuRpB6l1KmwTALw2h # Николай Расторгуев | колаб з Timati
+6Ze8JIjoSYVXjTHqjxjJzo # Варвара Визбор | колаб з Timati
+3Pws1lLmtT34mGnNSZbRaC # Владимир Кристовский | колаб з Timati
+4c5ZdXgMBSSCBhRAaFZBTA # Владимир Шахрин | колаб з Timati
+7lK1JEavnhgbcD6adzmlBk # Гуляй Рванина | колаб з Брутто
+7GAYkRBODgApaNp5H7xHAO # Isupov | колаб з Брутто
+6va0AinJ02XSh0wv21VFEQ # Карась К.М.С. | колаб з Брутто
+0uKdTuipbNbjg3H4rMZqlf # Meep | колаб з Брутто
+4Nl6PVYLwbCFfr3UqQlFtE # Volac | рішення автора

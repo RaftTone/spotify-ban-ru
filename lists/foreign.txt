@@ -2,3 +2,105 @@
 # Користувач обирає у закладці: «лише російська музика» (blocklist.txt) або «+ закордонні» (цей файл теж).
 # Формат рядка:  <Spotify artist ID, 22 символи>  # <ім'я> | <дата, місто> | <посилання на джерело>
 # Без підтвердженого виступу в Росії ПІСЛЯ 24.02.2022 (дата + джерело) запис не додаємо. ID не має бути в blocklist.txt.
+7gZfnEnfiaHzxARJ2LeXrf # 6ix9ine | 2022-09-25, Moscow | https://www.setlist.fm/setlist/tekashi-6ix9ine/2022/stadium-live-moscow-russia-6bb1a29a.html
+7tCg9aiVKZ5Cmhbfb7UoqM # 8TURN | 2025-11-22, Moscow | https://www.setlist.fm/setlist/8turn/2025/vk-stadium-moscow-russia-4b4ebf7e.html
+1XLiLo0iOylVJT8veTUZNU # Abyss, Watching Me | 2023-03-17, Saint Petersburg | https://www.setlist.fm/setlist/abyss-watching-me/2023/lastochka-saint-petersburg-russia-4371f37f.html
+4qfEQKZj3GXPjLBEppvHTH # AHOF | 2026-10-11, Moscow | https://www.setlist.fm/setlist/ahof/2026/cska-arena-moscow-russia-2b7eac22.html
+0z4gvV4rjIZ9wHck67ucSV # Akon | 2025-08-08, Moscow | https://www.setlist.fm/setlist/akon/2025/iceberg-ice-palace-sochi-russia-73448665.html
+2gpELJDuhOQi1DPcI0VFvw # Al Bano | 2025-06-20, Saint Petersburg | https://www.setlist.fm/setlist/al-bano-carrisi/2025/palace-square-saint-petersburg-russia-2345b4c7.html
+7vb7VLDqpLTlAy1ctTMR5d # Alex Gaudino | 2025-09-14, Moscow | https://www.setlist.fm/setlist/alex-gaudino/2025/tau-moscow-russia-4b404bd2.html
+2m5lRlEucobWPA1V6xqxWO # ALL(H)OURS | 2025-03-21, Moscow | https://www.setlist.fm/setlist/allhours/2025/base-spb-saint-petersburg-russia-337fe08d.html
+6k9yMJV47Kg01heORpVVKt # Andrea Gioè | 2022-11-16, Osurovo | https://www.setlist.fm/setlist/andrea-gioe/2022/lusik-harutyunyan-osurovo-russia-13bf954d.html
+2vd2HnNh4pdYa9gDVHFjEu # As I Lay Dying | 2025-10-30, Chelyabinsk | https://www.setlist.fm/setlist/as-i-lay-dying/2025/vk-stadium-moscow-russia-5b473f34.html
+2a8NW6dE2Igxb6LQXDhdgL # Atom TM | 2023-07-06, Taldom | https://ra.co/news/79269
+4Uv5bceTJ2h3tLlssUNDNP # Attila | 2026-09-12, Moscow | https://www.setlist.fm/setlist/attila/2026/vk-stadium-moscow-russia-4b711f7a.html
+2NjfafEappzvGGGDdMRJMP # Azizi Gibson | 2023-12-08, Moscow | https://www.setlist.fm/setlist/azizi-gibson/2023/brusnitsyn-hall-saint-petersburg-russia-2354303f.html
+1wsoV3RXPkxVz3PwsNRI5K # BewhY | 2025-07-05, Moscow | https://www.setlist.fm/setlist/bewhy/2025/club-sound-saint-petersburg-russia-6b42228e.html
+3Exoh42YMeqnUvYahAGgUE # BLITZERS | 2024-09-15, Moscow | https://www.setlist.fm/setlist/blitzers/2024/main-stage-moscow-russia-2b538422.html
+4ON1ruy5ijE7ZPQthbrkgI # Burak Yeter | 2025-09-07, Moscow | https://www.setlist.fm/setlist/burak-yeter/2025/tau-moscow-russia-4b4e23c2.html
+1YfEcTuGvBQ8xSD1f53UnK # Busta Rhymes | 2025-08-31, Troitsk | https://www.setlist.fm/setlist/busta-rhymes/2025/kinopark-moskino-troitsk-russia-4b4e23d2.html
+5fENlrINIVP0gJOtKxvORt # Call Me Karizma | 2025-05-17, Moscow | https://www.setlist.fm/setlist/call-me-karizma/2025/grafit-club-moscow-russia-6b473606.html
+16HYItTmZdhXM4Yz0CPtVy # CELESTE | 2025-05-18, Moscow | https://www.setlist.fm/setlist/celeste/2025/eclipse-moscow-russia-6347e23b.html
+5HKrYaVYdN3MyIe2WpVYCo # Cenk Erdoğan | 2024-07-25, Saint Petersburg | https://www.setlist.fm/setlist/cenk-erdoan/2024/yusupovskiy-sad-saint-petersburg-russia-7b572ec0.html
+2x0g8ynzsIZARjOCXhHJ45 # Cenotaph | 2024-12-14, Moscow | https://www.setlist.fm/setlist/cenotaph/2024/punk-fiction-moscow-russia-4b5b93fa.html
+1lHfzEkKmmvdVDDDLKkcsd # CIX | 2024-10-26, Moscow | https://www.setlist.fm/setlist/cix/2024/atmosphere-moscow-russia-353051b.html
+1gyIB8QvgXCZsEghjwTDL5 # CLOSE YOUR EYES | 2026-04-11, Moscow | https://www.setlist.fm/setlist/close-your-eyes/2026/vk-stadium-moscow-russia-2376f4bb.html
+4r63FhuTkUYltbVAg5TQnk # DaBaby | 2025-02-28, Moscow | https://www.setlist.fm/setlist/dababy/2025/vk-stadium-moscow-russia-235b1c9f.html
+63P5FOHij9qylmUA4rjHwQ # Dark Lunacy | 2025-12-10, Moscow | https://www.setlist.fm/setlist/dark-lunacy/2025/svoboda-club-moscow-russia-6b4dbab2.html
+0v6N0xV7AfHHKVcgUOjC51 # Derrick May | 2025-09-26, Saint Petersburg | https://dj.ru/afisha/event/552084
+3yoyUFgb11DMp1KrsJoQZU # DJ Assault | 2024-03-01, Moscow | https://blog.myidem.moscow/cPopVo6--CG
+1TLEOZcfYOPsSBSDCDKC7h # Effie | 2026-05-03, Moscow | https://www.setlist.fm/setlist/effie/2026/vk-stadium-moscow-russia-2376f4c7.html
+7lyUcNJUvtC0K7ufpLMvpg # Ektomorf | 2025-05-14, Moscow | https://www.setlist.fm/setlist/ektomorf/2025/1930-moscow-moscow-russia-4b5ba706.html
+6Kcax12zGyJGkuEYRcidcm # Emma Smith | 2024-07-11, Kaliningrad | https://www.setlist.fm/setlist/emma-smith/2024/planetarij-1-saint-petersburg-russia-5b571fa4.html
+5s4B157iLV2E6o5Iz6uyTy # Eva Gevorgyan | 2025-01-19, Moscow | https://www.setlist.fm/setlist/eva-gevorgyan/2025/moscow-state-academical-philharmony-moscow-russia-1343a129.html
+3ZZzT0naD25RhY2uZvIKkJ # EVERGLOW | 2025-11-23, Kazan' | https://www.setlist.fm/setlist/everglow/2025/main-stage-moscow-russia-1340f529.html
+5fN6PDw4pvvYRQtseOS4ru # Ferruccio Furlanetto | 2023-11-24, Moscow | https://www.setlist.fm/setlist/ferruccio-furlanetto/2023/zaryadye-hall-moscow-russia-634566ef.html
+0jnsk9HBra6NMjO2oANoPY # Flo Rida | 2026-05-02, Krasnodar | https://www.setlist.fm/setlist/flo-rida/2026/cska-arena-moscow-russia-334a6cd9.html
+5U5QQv5SbqIdVy8jozGpNg # Freddy Kempf | 2023-04-15, Omsk | https://www.setlist.fm/setlist/freddy-kempf/2023/filarmonia-omsk-russia-13b8f185.html
+67IWlRdLy3UcfY3q968euj # Gemini | 2025-09-06, Moscow | https://www.setlist.fm/setlist/gemini/2025/vk-stadium-moscow-russia-1b4ca1e0.html
+2h7fN6KOZVgWQ39sYK0jJm # German Brigante | 2024-07-05, Gorno-Altaysk | https://butterfly-festival.timepad.ru/event/2807256/
+0qEGZBnqUgcVlTE7EEjR2F # Gonzalo Rubalcaba | 2024-07-27, Moscow | https://www.setlist.fm/setlist/gonzalo-rubalcaba/2024/yusupovskiy-sad-saint-petersburg-russia-2354a08b.html
+65g8RO3JqCUTigI7YR3dAw # Grooverider | 2024-10-20, Unknown | https://acloserlisten.com/2024/10/20/ukrainian-field-notes-xxxvii/
+13y7CgLHjMVRMDqxdx0Xdo # Gucci Mane | 2025-12-13, Moscow | https://msk-live-hall.mts.ru/guccimane
+2krUNMgFZYm5s4Nn0g91W9 # HAON | 2025-07-06, Moscow | https://www.setlist.fm/setlist/haon/2025/atmosphere-moscow-russia-634512d7.html
+5y2TmxjZITDjLsfUxjlkcD # Howie Lee | 2024-04-27, Nizhniy Novgorod | https://www.setlist.fm/setlist/howie-lee/2024/philarmony-nizhniy-novgorod-russia-ba9bd36.html
+2eVTKG3Z5bbKk2OWMIe3iL # Internet Girl | 2024-08-03, Moscow | https://www.setlist.fm/setlist/internet-girl/2024/luzhnetskaya-naberezhnaya-moscow-russia-3b558cfc.html
+0gPgE6wLLiPnrakh9WcsdQ # İbrahim Tatlıses | 2026-01-18, Moscow | https://www.setlist.fm/setlist/ibrahim-tatlses/2026/mockba-moscow-russia-334970ad.html
+07YZf4WDAMNwqr4jfgOZ8y # Jason Derulo | 2025-09-26, Moscow | https://www.setlist.fm/setlist/jason-derulo/2025/cska-arena-moscow-russia-4b453b1a.html
+6iXlk59DNP0FJWQPpUP4zo # JMIN | 2026-07-11, Moscow | https://www.setlist.fm/setlist/jmin/2026/vk-stadium-moscow-russia-53730bd5.html
+7mZvWxGgI4wXWJ4LKHnQ6T # Joy | 2026-01-09, Saint Petersburg | https://rutube.ru/video/8c33f6a469dd2332d648c216549da354/
+01mXk9IDlVczWwZvVHAiIS # Kamaal Williams | 2026-07-10, Saint Petersburg | https://www.sobaka.ru/entertainment/music/219393
+2JhAlkmukNvarUpGhTFXUQ # KARD | 2025-05-28, Moscow | https://www.setlist.fm/setlist/kard/2025/vk-stadium-moscow-russia-3b4778dc.html
+6MG7fjH9YBryqLT03MnwQM # KIKI | 2026-06-11, Moscow | https://www.setlist.fm/setlist/kiki/2026/igor-butmans-club-moscow-russia-372a913.html
+2jAhpp38AMZvTHud2OJbvM # KIM WOOJIN | 2024-08-02, Moscow | https://www.setlist.fm/setlist/kim-woojin/2024/a2-saint-petersburg-russia-63547a0f.html
+6CWQ7KWveleaeFagKCz26T # Lalalar | 2023-06-08, Moscow | https://www.setlist.fm/setlist/lalalar/2023/aglomerat-moscow-russia-13566935.html
+57HNdw2ObRmfwWHG8Xhs8t # LIGHTSUM | 2024-07-23, Moscow | https://www.setlist.fm/setlist/lightsum/2024/mts-live-leto-moscow-russia-2b544436.html
+0tVSrjQ0NpDlecsJwGmrMy # Lil Moshpit | 2025-09-06, Moscow | https://www.setlist.fm/setlist/lil-moshpit/2025/vk-stadium-moscow-russia-134ca1e5.html
+3wyVrVrFCkukjdVIdirGVY # Lil Pump | 2025-06-14, Moscow | https://www.setlist.fm/setlist/lil-pump/2025/mts-live-hall-moscow-russia-4347eb1b.html
+3l9s67pOK4Stw9yW1wr0Bg # Loopy | 2026-05-03, Moscow | https://www.setlist.fm/setlist/loopy/2026/vk-stadium-moscow-russia-3376f4c5.html
+2bbmhDPNneMVFzA2dmvpVQ # Magda | 2024-07-18, Taldom | https://daily.afisha.ru/news/86564-festival-outline-anonsiroval-uchastnikov-sredi-nih-clock-dva-magda-i-daniel-bell/
+5lDRHWIcnl76SBeXJBInNl # Magnus Bäcklund | 2025-06-18, Moscow | https://orchestra.ru/en/concert/queen-best-hits-18062519
+2DRMyBNnQGATkVnoy3omna # Maoupa Mazzocchetti | 2022-09-24, Moscow | https://teletype.in/@myidem/LGxMQsxcS2T
+2MoxddbaW89rmqEU6YHK8K # Marcelina | 2026-08-23, Nikola-Lenivets | https://weekend.rambler.ru/muzyka/57002643-yubileynyy-festival-signal-sobral-8000-gostey-v-nikola-lenivtse/amp/
+6GnLE3Ncm59wsLSqF9divg # Margaret Dygas | 2023-07-06, Taldom | https://ra.co/news/79269
+6n9sdNb7mWvVmARDT6ujnJ # Memphis Cult | 2024-10-24, Moscow | https://www.setlist.fm/setlist/memphis-cult/2024/hlebozavod-9-moscow-russia-2344900b.html
+3ItdobbGrJbtjPPZegnSEZ # Molero | 2023-07-08, Taldom | https://daily.afisha.ru/news/77109-delfin-tim-aminov-accasari-i-molero-vystupyat-na-outline-2023/
+1oiZoULxUJDYGOKMgVefP4 # Morandi | 2026-07-23, Krasnodar | https://www.instagram.com/p/DXbv7xlDOM_/
+5Ln6VxkwRDdAH40Lel6Yj8 # Nidia Gongora | 2025-09-20, Novoivanovskoye, Moscow Oblast | https://www.nidiagongoramusic.com/sobre-nidia
+2n6aFLFLpEBs61Kfy5EX5v # OGUZ | 2023-04-14, Moscow | https://soundcloud.com/monasterio-techno-moscow/monasterio-chamber-podcast-238-oguz
+10Khz9BDdDT2mzm3330Cvu # Onyx | 2024-01-26, Krasnodar | https://www.setlist.fm/setlist/onyx/2024/1930-moscow-moscow-russia-13acc5fd.html
+0bY1ikxE6bmq9neq4XotXy # Ordo Rosarius Equilibrio | 2022-03-05, Moscow | https://www.setlist.fm/setlist/ordo-rosarius-equilibrio/2022/artist-concert-hall-moscow-russia-4ba3375a.html
+5MO2kbaGGA2a8kL4c9qqHq # Paul Oakenfold | 2025-09-12, Moscow | https://www.setlist.fm/setlist/paul-oakenfold/2025/a2-saint-petersburg-russia-340611b.html
+2u7CP5T30c8ctenzXgEV1W # pH-1 | 2026-05-03, Moscow | https://www.setlist.fm/setlist/ph-1/2026/vk-stadium-moscow-russia-3b76f4c0.html
+6LjwPhoH3RDoL8JoXciUHL # Pupo | 2024-03-15, Izhevsk | https://www.setlist.fm/setlist/pupo/2024/kremlin-palace-moscow-russia-2baa30c2.html
+2Up3LxnazsJmyCaVCG12VW # Richie Wess | 2025-06-14, Moscow | https://msk1.ru/text/entertainment/2025/06/15/75590165/
+4rBM6zAvArcI0zse5kUVJD # Robin | 2025-08-01, Kaliningrad | https://www.setlist.fm/setlist/robin/2025/central-park-kaliningrad-russia-b719d16.html
+5UjqeSp9dX6Nrge7WdDukr # Roni Size | 2024-04-20, Saint Petersburg | https://www.setlist.fm/setlist/roni-size/2024/sk-yubileyny-saint-petersburg-russia-4b7f67da.html
+43IQ5G04w55ib9XRwCAoIJ # Rumba de Bodas | 2023-08-04, Kaliningrad | https://www.setlist.fm/setlist/rumba-de-bodas/2023/central-park-kaliningrad-russia-b719d1a.html
+3dmVTaRcdhzAJR0FOvKCDt # Sadist | 2025-11-06, Moscow | https://www.setlist.fm/setlist/sadist/2025/factory-3-saint-petersburg-russia-634feeef.html
+5S6hjAxgxjsLylsTtMIimO # Saliva | 2026-04-23, Moscow | https://www.setlist.fm/setlist/saliva/2026/base-spb-saint-petersburg-russia-6b4a5ef2.html
+4sJyVLje7OBYbgNuwwFj6S # SHIRAN | 2023-06-10, Moscow | https://www.setlist.fm/setlist/shiran/2023/port-sevkabel-saint-petersburg-russia-13a6d9dd.html
+6MIKlcmdkd8e7VZW6uH7Hu # Sigil | 2026-06-06, Moscow | https://www.setlist.fm/setlist/sigil/2026/eclipse-moscow-russia-1372b1d9.html
+5DIi2JWfQPTKffaVBlIYRn # Sik-K | 2025-07-06, Moscow | https://www.setlist.fm/setlist/sikk/2025/atmosphere-moscow-russia-6b4512d2.html
+5PIHDfb0kpwTfNuWRWjXmU # Simon Trpčeski | 2026-04-01, Moscow | https://www.setlist.fm/setlist/simon-trpeski/2026/zaryadye-hall-moscow-russia-b76ddfe.html
+21dooacK2WGBB5amYvKyfM # Smokepurpp | 2025-06-14, Moscow | https://msk-live-hall.mts.ru/lilpumpsmokepurpp
+1Z4sHcpzg0xnN8X3WYzvgx # The Locos | 2026-07-24, Saint Petersburg | https://www.setlist.fm/setlist/the-locos/2026/rassvet-saint-petersburg-russia-1b70997c.html
+1QiWkA18x1P0aJ3iLaH2HH # Thomas N'evergreen | 2022-08-25, Nal'chik | https://www.setlist.fm/setlist/tomas-nevergreen/2022/zeleny-teatr-nalchik-russia-23b3602b.html
+0D3h8NZqNp7BN97JwtV6eW # Tigran Hamasyan | 2025-07-26, Moscow | https://www.setlist.fm/setlist/tigran-hamasyan/2025/hermitage-garden-moscow-russia-734232b5.html
+5Y5TRrQiqgUO4S36tzjIRZ # Timbaland | 2025-10-03, Moscow | https://www.setlist.fm/setlist/timbaland/2025/tau-moscow-russia-5b416774.html
+2hoCMH0KWwpjFJEGh0ECe7 # TIOT | 2024-09-14, Saint Petersburg | https://www.setlist.fm/setlist/tiot/2024/novaya-gollandiya-main-stage-saint-petersburg-russia-6350122f.html
+0DRiXmEOc6dJ6Rug3xi4HZ # TNX | 2025-11-28, Moscow | https://www.setlist.fm/setlist/tnx/2025/atmosphere-moscow-russia-634fea8b.html
+7JriFabAAczSYR6hsJ9JeH # Tommy Mork | 2023-04-07, Moscow | https://teletype.in/@myidem/UB-IoNeEws0
+2DZFPckF8WixkPmyLG3EtW # Tribes of Asaph | 2023-06-02, Moscow | https://www.setlist.fm/setlist/tribes-of-asaph/2023/unlock-cafe-moscow-russia-4ba69f72.html
+3fHxKPNIeAZqG37gjfdjq4 # Tsaritsa Logiki | 2025-09-05, Saint Petersburg | https://www.setlist.fm/setlist/tsaritsa-logiki/2025/lastochka-saint-petersburg-russia-73403a99.html
+5LHRHt1k9lMyONurDHEdrp # Tyga | 2025-05-31, Moscow | https://www.setlist.fm/setlist/tyga/2025/cska-arena-moscow-russia-73585241.html
+2lLe2zAxFPSHnAQdarRYFb # vangdale | 2025-07-06, Moscow | https://www.setlist.fm/setlist/vangdale/2025/atmosphere-moscow-russia-734512d5.html
+29zsVzEH33dD5QqxeL8dvy # Vini Vici | 2026-02-27, Moscow | https://www.setlist.fm/setlist/vini-vici/2026/tau-moscow-russia-1348ddf1.html
+2SJQjeKXsMqPziotLsmEit # W24 | 2024-10-15, Moscow | https://www.setlist.fm/setlist/w24/2024/aurora-concert-hall-saint-petersburg-russia-73547a15.html
+5ydXOnsJp8Lc33dX1sovpS # Warhammer | 2024-12-05, Moscow | https://www.setlist.fm/setlist/warhammer/2024/club-gorod-moscow-russia-1b5fc570.html
+4RSyJzf7ef6Iu2rnLdabNq # Willy William | 2025-09-13, Moscow | https://www.setlist.fm/setlist/willy-william/2025/tau-moscow-russia-434e23c7.html
+2nr8bylnNeelcA9SJvwmuu # X:IN | 2024-05-12, Moscow | https://www.setlist.fm/setlist/xin/2024/atmosphere-moscow-russia-63566e4b.html
+4tujQJicOnuZRLiBFdp3Ou # Xzibit | 2025-09-27, Moscow | https://www.setlist.fm/setlist/xzibit/2025/luzhniki-stadium-moscow-russia-334134e1.html
+5bxwvIM9PX0CkpS6f1L2Ff # YOUNG POSSE | 2025-08-09, Moscow | https://www.setlist.fm/setlist/young-posse/2025/luzhniki-stadium-moscow-russia-2b43dc2a.html
+2P1h10tRBVlC2lVUqhl6wm # Yves Larock | 2025-09-06, Moscow | https://www.setlist.fm/setlist/yves-larock/2025/tau-moscow-russia-4b4e23ce.html
+5FWPIKz9czXWaiNtw45KQs # Đức Phúc | 2025-09-20, Novoivanovskoye, Moscow Oblast | https://baochinhphu.vn/dai-dien-viet-nam-gianh-ngoi-quan-quan-tai-intervision-2025-102250921071615021.htm
