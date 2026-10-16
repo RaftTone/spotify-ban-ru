@@ -347,7 +347,6 @@
 7bQYmQQJtuyhodMUQtC3GB # Bird Bone | RU, MusicBrainz
 3QGr3zxw4bdVID2bsKVQTd # Hi-Fi | RU, MusicBrainz
 0EyznXouOtjilG74Xqbh3D # Sekret | RU, Wikidata
-0iwdyeaa6WACBoexz0p0XM # Юля Юріна | RU, Wikidata
 15BL2zbHD2usmyMvriAItQ # Пьер Нарцисс | російськомовні треки
 2YJaNa7tR4E61t1Pz56sty # Супергруппа | RU, Wikidata
 4TyLwoVkM8ubyuiIxtVJ9E # Gradusy | RU, Wikidata
@@ -2340,3 +2339,13 @@
 2RRsSauHi9EYx8AUmJMwkL # Joe Lynn Turner | підтримує Росію
 7yy1z6ahPRPKWXOp2z0CPp # Emir Kusturica | підтримує Росію
 7L6u6TyhjuwubrcojPeNgf # Burzum | підтримує Росію
+# --- Рішення автора: російськомовні, російська аудиторія ---
+1t6OTC1dbNIqb1jOUnfVQf # Марія Чайковська | рішення автора
+1QljgLVnBEZge237LSpemA # Какая Разница | рішення автора
+3NOlXM7t15vx8M9hwmQc9L # Clonnex | рішення автора
+1nVq0hKIVReeaiB3xJgKf0 # Molchat Doma | рішення автора
+6DdgtZYlUGNzjqkdCqvmfB # Intelligency | рішення автора
+15tWMVHWYQzu45cgaIuxNV # Nizkiz | рішення автора
+4h8pGxEIOi7j4me1yhYxlD # LSP | рішення автора
+6oQI0v23KFwYIqvvL0iX5n # Лайма Вайкуле | рішення автора
+748JmbGckfBveUUS6C4sSC # Валерий Меладзе | рішення автора
