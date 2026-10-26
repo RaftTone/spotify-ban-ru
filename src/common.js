@@ -9,10 +9,13 @@ const makeStore = (key) => {
 };
 
 // Progress box in the corner. o = { title, accent, bg, muted, font, flag }.
-// ui.stop is set by the stop button; ui.finish(html) turns the button into "Close".
+// ui.stop is set by the stop button; ui.finish(html) turns the button into "Close" and ends the run.
 const makeUI = (o) => {
   const ui = { stop: false, done: false };
+  const old = document.getElementById('br-box');
+  if (old) old.remove(); // a box left over from a finished run; keeps the ids below unique
   const box = document.createElement('div');
+  box.id = 'br-box';
   box.style.cssText = 'position:fixed;right:16px;bottom:96px;z-index:2147483647;width:300px;padding:14px 16px;background:' + o.bg + ';color:#fff;border:1px solid ' + o.accent + ';border-radius:10px;font:14px/1.4 ' + o.font + ';box-shadow:0 8px 30px rgba(0,0,0,.6)';
   box.innerHTML = '<b>' + o.title + '</b><div id="br-st" style="margin:8px 0;color:' + o.muted + '"></div><div style="height:6px;background:#333;border-radius:3px;overflow:hidden"><div id="br-bar" style="height:100%;width:0;background:' + o.accent + '"></div></div><button id="br-stop" style="margin-top:10px;padding:6px 14px;border:0;border-radius:16px;background:#fff;color:#000;font-weight:700;cursor:pointer">Зупинити</button>';
   document.body.appendChild(box);
@@ -40,7 +43,7 @@ const makeUI = (o) => {
     row.appendChild(c);
     ui.st.after(row);
   });
-  ui.finish = (html) => { ui.st.innerHTML = html; ui.btn.textContent = 'Закрити'; ui.done = true; };
+  ui.finish = (html) => { ui.st.innerHTML = html; ui.btn.textContent = 'Закрити'; ui.done = true; window[o.flag] = false; };
   ui.btn.onclick = () => {
     if (ui.done || ui.stop) { box.remove(); window[o.flag] = false; return; }
     ui.stop = true;
