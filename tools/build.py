@@ -62,6 +62,7 @@ def main():
 
     src = (ROOT / 'src' / 'ban.js').read_text(encoding='utf-8')
     src = src.replace('/*COMMON*/', (ROOT / 'src' / 'common.js').read_text(encoding='utf-8'))
+    src = src.replace('/*SPOTIFY*/', (ROOT / 'src' / 'spotify.js').read_text(encoding='utf-8'))
     src = src.replace("/*IDS*/''", "'" + ''.join(ids) + "'")
     src = src.replace("/*IDS_EXTRA*/''", "'" + ''.join(foreign) + "'")
     out = ROOT / 'site'
