@@ -38,6 +38,8 @@ def read_list(path):
 
 
 def main():
+    # Windows consoles default to cp1252, which cannot print the Cyrillic messages below.
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
     block, e1 = read_list(ROOT / 'lists' / 'blocklist.txt')
     allow, e2 = read_list(ROOT / 'lists' / 'allowlist.txt')
     foreign, e3 = read_list(ROOT / 'lists' / 'foreign.txt')

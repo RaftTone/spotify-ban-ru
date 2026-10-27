@@ -12,29 +12,7 @@
   const SNIFF_MS = 15000; // how long to wait for the page to make an authenticated request
   const NUDGE_MS = 2500;  // if nothing yet, navigate to make the page fire requests
   const GRACE_MS = 3000;  // after auth is seen, keep listening for the username
-
-  if (window.__banRuRunning) return;
-  window.__banRuRunning = true;
-  const ui = makeUI({ title: 'Бан російських виконавців', accent: '#1db954', bg: '#181818', muted: '#b3b3b3', font: 'system-ui,sans-serif', flag: '__banRuRunning' });
-  if (!location.hostname.endsWith('open.spotify.com')) {
-    ui.finish('Спершу відкрий <b>https://open.spotify.com</b> і зайди в свій акаунт, потім натисни закладку ще раз.');
-    return;
-  }
-  const { store, save } = makeStore(KEY);
-
-  // Two lists: Russian music only, or also foreign artists who performed in Russia since Feb 2022.
-  // window.__banMode = 'ru' | 'all' skips the question.
-  if (IDS_EXTRA.length) {
-    let mode = window.__banMode;
-    if (mode !== 'ru' && mode !== 'all') {
-      mode = await ui.choose('Кого банимо?', [
-        { value: 'ru', label: 'Лише російську музику (' + IDS_CORE.length + ')' },
-        { value: 'all', label: '+ закордонних, що виступали в Росії з лютого 2022 (разом ' + (IDS_CORE.length + IDS_EXTRA.length) + ')' }
-      ]);
-    }
-    if (!mode) return;
-    if (mode === 'all') IDS = IDS_CORE.concat(IDS_EXTRA);
-  }
+  const SLOW_SEC = 5;     // slow path, per artist including the pause
 
   // ---------- auth: borrow the page's own Authorization + client-token ----------
   // Spotify's token endpoints are bot-protected, so instead of minting a token we watch the
@@ -179,54 +157,102 @@
   };
 
   // ---------- run ----------
-  const startPath = location.pathname + location.search;
-  const todo = IDS.filter((id) => store[id] !== 'banned' && store[id] !== 'already');
-  const counts = { banned: 0, already: IDS.length - todo.length, missing: 0, failed: 0 };
-  let finished = 0;
-  const advance = (k) => { finished += k; ui.bar.style.width = (todo.length ? Math.round((finished / todo.length) * 100) : 100) + '%'; };
-
-  let auth = null, username = null;
+  // A run still on screen gets its box flashed instead of a silent no-op. A raised flag
+  // without a box is left over from a run that died, so start over.
+  const running = window.__banRuRunning && document.getElementById('br-box');
+  if (running) { running.animate([{ transform: 'scale(1.05)' }, { transform: 'none' }], { duration: 250, iterations: 4 }); return; }
+  window.__banRuRunning = true;
+  const ui = makeUI({ title: 'Бан російських виконавців', accent: '#1db954', bg: '#181818', muted: '#b3b3b3', font: 'system-ui,sans-serif', flag: '__banRuRunning' });
   try {
-    ui.st.textContent = 'Чекаю на автентифікацію сторінки...';
-    const sniffed = await sniff();
-    if (!sniffed) throw new Error('no auth captured in time');
-    username = await findUsername(sniffed.username, sniffed.token);
-    if (!username) throw new Error('no username');
-    auth = sniffed;
-    log('auth ok, username:', username);
-  } catch (e) { log('auth failed:', e && e.message); }
-
-  const slowQueue = [];
-  if (auth) {
-    for (let i = 0; i < todo.length && !ui.stop; i += FAST_CHUNK) {
-      const chunk = todo.slice(i, i + FAST_CHUNK);
-      ui.st.textContent = 'Швидкий бан: ' + Math.min(i + FAST_CHUNK, todo.length) + ' з ' + todo.length + '...';
-      if (await writeChunk(chunk, auth, username)) {
-        chunk.forEach((id) => { store[id] = 'banned'; counts.banned++; });
-        save();
-        advance(chunk.length);
-      } else {
-        slowQueue.push(...chunk);
-      }
-      await wait(300);
+    if (!location.hostname.endsWith('open.spotify.com')) {
+      ui.finish('Спершу відкрий <b>https://open.spotify.com</b> і зайди в свій акаунт, потім натисни закладку ще раз.');
+      return;
     }
-  } else {
-    slowQueue.push(...todo);
-  }
 
-  for (let n = 1; n <= slowQueue.length && !ui.stop; n++) {
-    const id = slowQueue[n - 1];
-    ui.st.textContent = 'Резервний спосіб (' + n + ' з ' + slowQueue.length + '). Лишилось приблизно ' + Math.ceil((slowQueue.length - n) * 4 / 60) + ' хв. Вкладку не закривай.';
-    let r;
-    try { r = await slowBan(id); } catch (e) { r = 'failed'; }
-    counts[r]++;
-    if (r === 'banned' || r === 'already') { store[id] = r; save(); }
-    advance(1);
-    await wait(500 + Math.random() * 500);
-  }
+    // Two lists: Russian music only, or also foreign artists who performed in Russia since Feb 2022.
+    // window.__banMode = 'ru' | 'all' skips the question.
+    if (IDS_EXTRA.length) {
+      let mode = window.__banMode;
+      if (mode !== 'ru' && mode !== 'all') {
+        mode = await ui.choose('Кого банимо?', [
+          { value: 'ru', label: 'Лише російську музику (' + IDS_CORE.length + ')' },
+          { value: 'all', label: '+ закордонних, що виступали в Росії з лютого 2022 (разом ' + (IDS_CORE.length + IDS_EXTRA.length) + ')' }
+        ]);
+      }
+      if (!mode) return;
+      if (mode === 'all') IDS = IDS_CORE.concat(IDS_EXTRA);
+    }
 
-  navigate(startPath);
-  ui.bar.style.width = '100%';
-  ui.finish((ui.stop ? 'Зупинено. ' : 'Готово! ') + 'Заблоковано: <b>' + counts.banned + '</b>, вже були: ' + counts.already + (counts.missing + counts.failed ? ', не вдалось: ' + (counts.missing + counts.failed) : '') + '.');
-  window.__banRuResult = counts;
+    const startPath = location.pathname + location.search;
+    let auth = null, username = null;
+    try {
+      ui.st.textContent = 'Чекаю на автентифікацію сторінки...';
+      const sniffed = await sniff();
+      if (!sniffed) throw new Error('no auth captured in time');
+      username = await findUsername(sniffed.username, sniffed.token);
+      if (!username) throw new Error('no username');
+      auth = sniffed;
+      log('auth ok, username:', username);
+    } catch (e) { log('auth failed:', e && e.message); }
+
+    // The "already banned" cache is per account, so another account in this browser never inherits it.
+    // With no fresh username nothing is cached: the slow path checks every artist page anyway.
+    if (!username) username = usernameFromStorage() || usernameFromDom();
+    const { store, save } = username ? makeStore(KEY + ':' + username) : { store: {}, save: () => {} };
+    const todo = IDS.filter((id) => store[id] !== 'banned' && store[id] !== 'already');
+    const counts = { banned: 0, already: IDS.length - todo.length, missing: 0, failed: 0 };
+    let finished = 0;
+    const advance = (k) => { finished += k; ui.bar.style.width = (todo.length ? Math.round((finished / todo.length) * 100) : 100) + '%'; };
+
+    const slowQueue = [];
+    if (auth) {
+      for (let i = 0; i < todo.length && !ui.stop; i += FAST_CHUNK) {
+        const chunk = todo.slice(i, i + FAST_CHUNK);
+        ui.st.textContent = 'Швидкий бан: ' + Math.min(i + FAST_CHUNK, todo.length) + ' з ' + todo.length + '...';
+        if (await writeChunk(chunk, auth, username)) {
+          chunk.forEach((id) => { store[id] = 'banned'; counts.banned++; });
+          save();
+          advance(chunk.length);
+        } else {
+          slowQueue.push(...chunk);
+        }
+        await wait(300);
+      }
+    } else {
+      slowQueue.push(...todo);
+    }
+
+    // The slow path can take hours on the full list, so it only starts once the user agrees.
+    if (slowQueue.length && !ui.stop) {
+      const mins = Math.ceil(slowQueue.length * SLOW_SEC / 60);
+      const answer = await ui.choose((auth ? 'Швидко заблокувати вдалося не всіх.' : 'Не вдалося підхопити автентифікацію сторінки, тож швидкий спосіб недоступний.')
+        + ' Резервний спосіб відкриває сторінку кожного виконавця по черзі: ' + slowQueue.length + ' шт., приблизно <b>' + (mins < 90 ? mins + ' хв' : Math.round(mins / 60) + ' год') + '</b>, і весь цей час вкладку не можна чіпати.'
+        + ' Часто допомагає просто оновити сторінку й натиснути закладку ще раз.', [
+        { value: 'slow', label: 'Продовжити повільно' },
+        { value: 'stop', label: 'Зупинитись' }
+      ]);
+      if (!answer) { navigate(startPath); return; }
+      if (answer === 'stop') ui.stop = true;
+    }
+
+    for (let n = 1; n <= slowQueue.length && !ui.stop; n++) {
+      const id = slowQueue[n - 1];
+      ui.st.textContent = 'Резервний спосіб (' + n + ' з ' + slowQueue.length + '). Лишилось приблизно ' + Math.ceil((slowQueue.length - n) * SLOW_SEC / 60) + ' хв. Вкладку не закривай.';
+      let r;
+      try { r = await slowBan(id); } catch (e) { r = 'failed'; }
+      counts[r]++;
+      if (r === 'banned' || r === 'already') { store[id] = r; save(); }
+      advance(1);
+      await wait(500 + Math.random() * 500);
+    }
+
+    navigate(startPath);
+    ui.bar.style.width = '100%';
+    ui.finish((ui.stop ? 'Зупинено. ' : 'Готово! ') + 'Заблоковано: <b>' + counts.banned + '</b>, вже були: ' + counts.already + (counts.missing + counts.failed ? ', не вдалось: ' + (counts.missing + counts.failed) : '') + '.');
+    window.__banRuResult = counts;
+  } catch (e) {
+    // The loader does not await this function, so an error that escapes here would be lost.
+    console.error('[banRu]', e);
+    ui.finish('Помилка: ' + String((e && e.message) || e).replace(/</g, '&lt;') + '. Онови сторінку й натисни закладку ще раз.');
+  }
 })();
