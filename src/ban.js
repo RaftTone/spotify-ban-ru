@@ -17,17 +17,21 @@
   // ---------- auth: borrow the page's own Authorization + client-token ----------
   // Spotify's token endpoints are bot-protected, so instead of minting a token we watch the
   // requests the page itself makes (fetch and XHR) for a valid header pair, then restore everything.
-  const hook = (onRequest) => {
+  const hook = (onRequest, onResponse) => {
     const XP = XMLHttpRequest.prototype;
     const orig = { fetch: window.fetch, open: XP.open, setHeader: XP.setRequestHeader, send: XP.send };
     const seen = { fetch: 0, xhr: 0 };
     window.fetch = function (input, init) {
       seen.fetch++;
+      const url = (input && input.url) || String(input || '');
       try {
         const h = new Headers((init && init.headers) || (input && input.headers) || {});
-        onRequest(typeof input === 'string' ? input : (input && input.url) || '', h.get('authorization'), h.get('client-token'), init && init.body);
+        onRequest(url, h.get('authorization'), h.get('client-token'), init && init.body);
       } catch (e) {}
-      return orig.fetch.apply(this, arguments);
+      const p = orig.fetch.apply(this, arguments);
+      // Only GraphQL (pathfinder) answers are read; a clone leaves the page's own copy untouched.
+      if (/\/pathfinder\//.test(url)) p.then((r) => r.clone().text()).then((text) => onResponse(url, init && init.body, text)).catch(() => {});
+      return p;
     };
     XP.open = function (method, url) { this.__br = { url, h: {} }; return orig.open.apply(this, arguments); };
     XP.setRequestHeader = function (k, v) { try { this.__br.h[String(k).toLowerCase()] = v; } catch (e) {} return orig.setHeader.apply(this, arguments); };
@@ -50,6 +54,25 @@
     return m && !/^(me|self|v\d+)$/i.test(m[1]) ? decodeURIComponent(m[1]) : null;
   };
 
+  // The web player no longer puts the username in requests; its GraphQL answers carry it under
+  // data.me. Other users (playlist owners) appear elsewhere in the same answers, and deep inside
+  // data.me (library items), so only the first levels of data.me are trusted.
+  const userFromResponse = (url, body, text) => {
+    let me = null, op = '';
+    try { op = JSON.parse(body).operationName; } catch (e) { op = (/[?&]operationName=([^&]+)/.exec(url) || [])[1] || ''; }
+    try { me = JSON.parse(text).data.me; } catch (e) {}
+    const find = (o, depth) => {
+      if (!o || typeof o !== 'object' || depth > 2) return null;
+      if (typeof o.username === 'string' && o.username) return o.username;
+      for (const k in o) { const v = find(o[k], depth + 1); if (v) return v; }
+      return null;
+    };
+    const name = find(me, 0);
+    if (name) log('username from pathfinder', op);
+    else if (text.includes('"username"')) log('pathfinder', op, 'has a username outside data.me');
+    return name;
+  };
+
   const sniff = () => new Promise((resolve) => {
     let auth = null, user = null, settled = false, h;
     const finish = () => {
@@ -66,8 +89,11 @@
       }
       user = userFromRequest(url, body) || user;
       if (auth && user) finish();
+    }, (url, body, text) => {
+      user = userFromResponse(url, body, text) || user;
+      if (auth && user) finish();
     });
-    setTimeout(() => { if (!auth && !settled) { log('no auth yet, nudging page'); navigate('/artist/' + IDS[0]); } }, NUDGE_MS);
+    setTimeout(() => { if (!user && !settled) { log(auth ? 'no username yet' : 'no auth yet', '- nudging page'); navigate('/artist/' + IDS[0]); } }, NUDGE_MS);
     setTimeout(finish, SNIFF_MS);
   });
 
@@ -95,9 +121,20 @@
     if (!r.ok) { log('v1/me status', r.status); return null; }
     return (await r.json()).id;
   };
+  // The link to the user's own profile only exists while the avatar menu is open, so open it briefly.
+  const usernameFromMenu = async () => {
+    const btn = document.querySelector('[data-testid="user-widget-link"]');
+    if (!btn) { log('avatar button not found'); return null; }
+    btn.click();
+    const a = await waitFor(() => document.querySelector('#context-menu a[href^="/user/"], [role="menu"] a[href^="/user/"]'), 2000);
+    document.body.click();
+    const m = a && /^\/user\/([^/?#]+)/.exec(a.getAttribute('href'));
+    if (m) log('username from avatar menu');
+    return m ? decodeURIComponent(m[1]) : null;
+  };
   // Fresh sources first; the cache is only a fallback so a different account never inherits an old name.
   const findUsername = async (fromRequests, token) => {
-    let name = fromRequests || usernameFromStorage() || usernameFromDom();
+    let name = fromRequests || usernameFromStorage() || (await usernameFromMenu()) || usernameFromDom();
     if (!name) { try { name = localStorage.getItem(USER_KEY); } catch (e) {} }
     if (!name) name = await usernameFromApi(token);
     if (name) { try { localStorage.setItem(USER_KEY, name); } catch (e) {} }
@@ -184,10 +221,10 @@
     }
 
     const startPath = location.pathname + location.search;
-    let auth = null, username = null;
+    let auth = null, username = null, sniffed = null;
     try {
       ui.st.textContent = 'Чекаю на автентифікацію сторінки...';
-      const sniffed = await sniff();
+      sniffed = await sniff();
       if (!sniffed) throw new Error('no auth captured in time');
       username = await findUsername(sniffed.username, sniffed.token);
       if (!username) throw new Error('no username');
@@ -225,7 +262,7 @@
     // The slow path can take hours on the full list, so it only starts once the user agrees.
     if (slowQueue.length && !ui.stop) {
       const mins = Math.ceil(slowQueue.length * SLOW_SEC / 60);
-      const answer = await ui.choose((auth ? 'Швидко заблокувати вдалося не всіх.' : 'Не вдалося підхопити автентифікацію сторінки, тож швидкий спосіб недоступний.')
+      const answer = await ui.choose((auth ? 'Швидко заблокувати вдалося не всіх.' : sniffed ? 'Не вдалося визначити ім\'я акаунта, тож швидкий спосіб недоступний.' : 'Не вдалося підхопити автентифікацію сторінки, тож швидкий спосіб недоступний.')
         + ' Резервний спосіб відкриває сторінку кожного виконавця по черзі: ' + slowQueue.length + ' шт., приблизно <b>' + (mins < 90 ? mins + ' хв' : Math.round(mins / 60) + ' год') + '</b>, і весь цей час вкладку не можна чіпати.'
         + ' Часто допомагає просто оновити сторінку й натиснути закладку ще раз.', [
         { value: 'slow', label: 'Продовжити повільно' },
