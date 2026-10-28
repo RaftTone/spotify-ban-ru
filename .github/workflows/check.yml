@@ -12,3 +12,18 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/build.py --check
+  script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      # The browser tests use the runner's preinstalled Google Chrome.
+      - run: node --test tests/*.test.mjs
+      - run: python tools/build.py && node --check site/ban.js

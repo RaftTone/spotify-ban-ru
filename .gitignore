@@ -5,3 +5,4 @@ __pycache__/
 site/index.html
 site/ban.js
 _site/
+node_modules/
